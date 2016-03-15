@@ -22,3 +22,6 @@ HEADERS  += provitel.h \
     planets.h
 
 FORMS    += provitel.ui
+
+RESOURCES += \
+    provitoolbar.qrc

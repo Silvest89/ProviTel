@@ -3,9 +3,9 @@
 
 #include <QWidget>
 
-#include "planets.h"
 #include <vector>
 
+class Planets;
 class ProviMap : public QWidget
 {
 public:
@@ -15,6 +15,7 @@ public:
     void updatePlanet();
 
     std::vector<Planets*> planetVect;
+    void addPlanet(Planets* planet);
 
 };
 

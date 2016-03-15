@@ -5,18 +5,24 @@
 #include <iostream>
 
 #include "provimap.h"
+#include "planets.h"
+#include <QDebug>
 
 ProviMap::ProviMap(QWidget *parent)
     : QWidget(parent)
 {
-    Planets *zrfe3 = new Planets("Z-RFE3", 10.0, 20.0, 55.0, 25.0);
+    //Planets *zrfe3 = new Planets(this, "Z-RFE3", 10.0, 20.0, 55.0, 25.0);
 
-    planetVect.push_back(zrfe3);
+    //planetVect.push_back(zrfe3);
+    //Planets::map = this;
 }
+
+
 
 void ProviMap::paintEvent(QPaintEvent *e)
 {
     Q_UNUSED(e);
+    /*Q_UNUSED(e);
     QPen pen( Qt::black );
     pen.setWidth(2);
 
@@ -29,7 +35,7 @@ void ProviMap::paintEvent(QPaintEvent *e)
         painter.setPen(penHText);
         if(!(*it)->isRed())
             painter.drawText((*it)->getPlanet(), Qt::AlignBottom|Qt::AlignHCenter, "clr: ");
-    }
+    }*/
 
         //painter.drawRoundedRect(it, 16, 16);
     //painter.drawText(point, "Z-RFE3");
@@ -38,4 +44,8 @@ void ProviMap::paintEvent(QPaintEvent *e)
 
 void ProviMap::updatePlanet(){
     update();
+}
+
+void ProviMap::addPlanet(Planets* planet){
+    planetVect.push_back(planet);
 }
