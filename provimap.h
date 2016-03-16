@@ -8,6 +8,7 @@
 class Planets;
 class ProviMap : public QWidget
 {
+    Q_OBJECT
 public:
     ProviMap(QWidget *parent = 0);
 
@@ -16,6 +17,9 @@ public:
 
     std::vector<Planets*> planetVect;
     void addPlanet(Planets* planet);
+
+private slots:
+    void readIntel();
 
 };
 

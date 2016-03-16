@@ -7,39 +7,27 @@
 #include "provimap.h"
 #include "planets.h"
 #include <QDebug>
+#include <QTimer>
+#include <QStyleOption>
+#include <QFile>
+#include <QStandardPaths>
 
 ProviMap::ProviMap(QWidget *parent)
     : QWidget(parent)
 {
-    //Planets *zrfe3 = new Planets(this, "Z-RFE3", 10.0, 20.0, 55.0, 25.0);
-
-    //planetVect.push_back(zrfe3);
-    //Planets::map = this;
+    //QTimer *timer = new QTimer(this);
+    //connect(timer, SIGNAL(timeout()), this, SLOT(readIntel()));
+    //timer->start();
+    //QTimer::singleShot(2000, this, SLOT(readIntel()));
 }
-
-
 
 void ProviMap::paintEvent(QPaintEvent *e)
 {
     Q_UNUSED(e);
-    /*Q_UNUSED(e);
-    QPen pen( Qt::black );
-    pen.setWidth(2);
-
-    QPainter painter(this);
-    painter.setPen( pen );
-    for (std::vector<Planets*>::iterator it = planetVect.begin() ; it != planetVect.end(); ++it){
-        painter.drawRoundedRect((*it)->getPlanet(), 10, 10);
-        painter.drawText((*it)->getPlanet(), Qt::AlignHCenter, (*it)->getName().c_str());
-        QPen penHText(QColor("#00e0fc"));
-        painter.setPen(penHText);
-        if(!(*it)->isRed())
-            painter.drawText((*it)->getPlanet(), Qt::AlignBottom|Qt::AlignHCenter, "clr: ");
-    }*/
-
-        //painter.drawRoundedRect(it, 16, 16);
-    //painter.drawText(point, "Z-RFE3");
-    //painter.drawRoundedRect(rectangle, 16, 16);
+    QStyleOption opt;
+    opt.init(this);
+    QPainter p(this);
+    style()->drawPrimitive(QStyle::PE_Widget, &opt, &p, this);
 }
 
 void ProviMap::updatePlanet(){
@@ -48,4 +36,25 @@ void ProviMap::updatePlanet(){
 
 void ProviMap::addPlanet(Planets* planet){
     planetVect.push_back(planet);
+}
+
+void ProviMap::readIntel(){
+    qDebug() << "Reading file";
+
+    const QString documentsFolder = QStandardPaths::writableLocation(QStandardPaths::DocumentsLocation);
+    qDebug() << documentsFolder;
+    QFile inputFile(documentsFolder + "/EVE/logs/ChatLogs/TheCitadel_20160316_114536.txt");
+    if (inputFile.open(QIODevice::ReadOnly))
+    {
+
+       QTextStream in(&inputFile);
+       while (!in.atEnd())
+       {
+          QString line = in.readLine();
+          std::string test = line.toStdString();
+
+          qDebug() << test.c_str();
+       }
+       inputFile.close();
+    }
 }
