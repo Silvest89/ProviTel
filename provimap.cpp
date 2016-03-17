@@ -11,6 +11,10 @@
 #include <QStyleOption>
 #include <QFile>
 #include <QStandardPaths>
+#include <QFileSystemWatcher>
+#include <QDir>
+#include <QListIterator>
+#include <QRegExp>
 
 ProviMap::ProviMap(QWidget *parent)
     : QWidget(parent)
@@ -38,23 +42,23 @@ void ProviMap::addPlanet(Planets* planet){
     planetVect.push_back(planet);
 }
 
-void ProviMap::readIntel(){
+void ProviMap::readIntel()
+{
     qDebug() << "Reading file";
 
     const QString documentsFolder = QStandardPaths::writableLocation(QStandardPaths::DocumentsLocation);
     qDebug() << documentsFolder;
-    QFile inputFile(documentsFolder + "/EVE/logs/ChatLogs/TheCitadel_20160316_114536.txt");
+    QFile inputFile(documentsFolder + "/EVE/logs/Chatlogs/TheCitadel_20160316_114536.txt");
     if (inputFile.open(QIODevice::ReadOnly))
     {
+        QTextStream in(&inputFile);
+        while (!in.atEnd())
+        {
+            QString line = in.readLine();
+            std::string test = line.toStdString();
 
-       QTextStream in(&inputFile);
-       while (!in.atEnd())
-       {
-          QString line = in.readLine();
-          std::string test = line.toStdString();
-
-          qDebug() << test.c_str();
-       }
-       inputFile.close();
+            qDebug() << test.c_str();
+        }
+        inputFile.close();
     }
 }

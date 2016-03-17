@@ -15,11 +15,13 @@ TEMPLATE = app
 SOURCES += main.cpp\
         provitel.cpp \
     provimap.cpp \
-    planets.cpp
+    planets.cpp \
+    channelintel.cpp
 
 HEADERS  += provitel.h \
     provimap.h \
-    planets.h
+    planets.h \
+    channelintel.h
 
 FORMS    += provitel.ui
 

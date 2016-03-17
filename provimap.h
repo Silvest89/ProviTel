@@ -2,7 +2,6 @@
 #define PROVIMAP_H
 
 #include <QWidget>
-
 #include <vector>
 
 class Planets;

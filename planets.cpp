@@ -7,7 +7,8 @@ Planets::Planets(QWidget *parent) : QPushButton(parent)
 {
     this->name = "";
     this->status = CLEAR;
-    ((ProviMap)parent).addPlanet(this);
+
+    ((ProviMap*)parent)->addPlanet(this);
 
     connect(this, SIGNAL (released()), this, SLOT (handleButton()));
 }
