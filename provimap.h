@@ -17,6 +17,8 @@ public:
     std::vector<Planets*> planetVect;
     void addPlanet(Planets* planet);
 
+    std::vector<Planets*> getPlanets();
+
 private slots:
     void readIntel();
 

@@ -35,7 +35,8 @@ void ProviMap::paintEvent(QPaintEvent *e)
 }
 
 void ProviMap::updatePlanet(){
-    update();
+    //update();
+    qDebug() << "test";
 }
 
 void ProviMap::addPlanet(Planets* planet){
@@ -61,4 +62,9 @@ void ProviMap::readIntel()
         }
         inputFile.close();
     }
+}
+
+std::vector<Planets*> ProviMap::getPlanets()
+{
+    return planetVect;
 }

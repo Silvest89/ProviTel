@@ -16,14 +16,16 @@ SOURCES += main.cpp\
         provitel.cpp \
     provimap.cpp \
     planets.cpp \
-    channelintel.cpp
+    channelintel.cpp \
+    intelmessages.cpp
 
 HEADERS  += provitel.h \
     provimap.h \
     planets.h \
-    channelintel.h
+    channelintel.h \
+    intelmessages.h
 
 FORMS    += provitel.ui
 
 RESOURCES += \
-    provitoolbar.qrc
+    resource.qrc

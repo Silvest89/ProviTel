@@ -1,5 +1,5 @@
 <RCC>
-    <qresource prefix="/tool">
+    <qresource prefix="/images">
         <file>images/sound_icon.png</file>
     </qresource>
 </RCC>

@@ -24,11 +24,11 @@ public:
 
 private slots:
     void getLatestIntelChannels();
+    void processIntel(QString channelName, QString intel);
 
 private:
     Ui::ProviTel *ui;
 
-    QFileSystemWatcher watcher;
 };
 
 #endif // PROVITEL_H

@@ -5,6 +5,8 @@
 #include <QDateTime>
 #include "provimap.h"
 
+enum STATUS { RED = 0 , CLEAR = 1};
+
 class Planets : public QPushButton
 {
     Q_OBJECT
@@ -22,12 +24,9 @@ public:
     int minutes;
     int seconds;
 
-private:
-    enum STATUS { RED = 0 , CLEAR = 1};
-
+private:    
     QString name;
     int status;
-
 
 private slots:
     void handleButton();
