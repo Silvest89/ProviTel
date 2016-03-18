@@ -4,12 +4,15 @@
 #
 #-------------------------------------------------
 
-QT       += core gui
+QT       += core gui network xml
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
 TARGET = ProviTel
 TEMPLATE = app
+
+    LIBS += -LC:/OpenSSL-Win32/lib -lubsec
+    INCLUDEPATH += C:/OpenSSL-Win32/include
 
 
 SOURCES += main.cpp\
