@@ -1,4 +1,4 @@
-#include "channelintel.h"
+#include "intelchannellogparser.h"
 #include "provitel.h"
 
 #include <QDebug>
@@ -8,15 +8,13 @@
 #include <QFile>
 
 
-ChannelIntel::ChannelIntel(ProviTel *parent, QString name, QString file)
+IntelChannelLogParser::IntelChannelLogParser(ProviTel *parent, QString name, QString file)
 {
     proviTel = parent;    
 
     this->initialSetup = true;
     this->name = name;
     this->latestIntel = "";
-
-    qDebug() << name;
 
     fileLocation = QStandardPaths::writableLocation(QStandardPaths::DocumentsLocation) + "/EVE/logs/Chatlogs/" + file;
 
@@ -25,12 +23,12 @@ ChannelIntel::ChannelIntel(ProviTel *parent, QString name, QString file)
 }
 
 
-QString ChannelIntel::getName()
+QString IntelChannelLogParser::getName()
 {
     return name;
 }
 
-void ChannelIntel::checkIntel()
+void IntelChannelLogParser::checkIntel()
 {
     QFile inputFile(fileLocation);
     if (inputFile.open(QIODevice::ReadOnly))
@@ -76,7 +74,7 @@ void ChannelIntel::checkIntel()
     QTimer::singleShot(1500, this, SLOT(checkIntel()));
 }
 
-void ChannelIntel::transferIntel(QString intel)
+void IntelChannelLogParser::transferIntel(QString intel)
 {
     emit intelFound(this->getName(), intel);
 }

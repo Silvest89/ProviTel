@@ -8,7 +8,8 @@
 #include <QListIterator>
 #include <QRegExp>
 #include <QStandardPaths>
-#include "channelintel.h"
+#include "intelchannellogparser.h"
+#include "intel.h"
 
 
 ProviTel::ProviTel(QWidget *parent) :
@@ -54,7 +55,7 @@ void ProviTel::getLatestIntelChannels()
         fileName.replace(QRegExp("\\_.*$"), "");
         if(channelList.contains(fileName))
         {            
-            ChannelIntel* intel = new ChannelIntel(this, fileName, ((QFileInfo)*i).baseName() + ".txt");
+            IntelChannelLogParser* intel = new IntelChannelLogParser(this, fileName, ((QFileInfo)*i).baseName() + ".txt");
 
             intelChannelList.push_back(intel);
             channelList.removeOne(fileName);
@@ -62,29 +63,30 @@ void ProviTel::getLatestIntelChannels()
     }
 }
 
-void ProviTel::processIntel(QString channelName, QString intel)
+void ProviTel::processIntel(QString channelName, QString intelMessage)
 {
     ProviMap *proviMap = this->findChild<ProviMap *>(QString(), Qt::FindChildrenRecursively);
     std::vector<Planets*> planets = proviMap->getPlanets();
 
     QRegularExpression regex("\\[(.*)\\]");
-    QRegularExpressionMatch match = regex.match(intel);
+    QRegularExpressionMatch match = regex.match(intelMessage);
     QString dateTime = match.captured(1);
-    qDebug() << dateTime.trimmed();
-    intel.replace(QRegExp("\\[(.*)\\]"), "");
+    //qDebug() << dateTime.trimmed();
+    intelMessage.replace(QRegExp("\\[(.*)\\]"), "");
 
     QRegularExpression regex2("(.*)>");
-    QRegularExpressionMatch match2 = regex2.match(intel);
+    QRegularExpressionMatch match2 = regex2.match(intelMessage);
 
     QString reporterName = match2.captured(1);
-    qDebug() << reporterName.trimmed();
+    //qDebug() << reporterName.trimmed();
 
-    intel.replace(QRegExp("(.*)>"), "");
+    intelMessage.replace(QRegExp("(.*)>"), "");
 
-    qDebug() << intel.trimmed();
+    //qDebug() << intelMessage.trimmed();
 
     IntelMessages *intelMessages = this->findChild<IntelMessages *>(QString(), Qt::FindChildrenRecursively);
-    intelMessages->addIntel(channelName, dateTime.trimmed(), reporterName.trimmed(), intel.trimmed());
+    Intel *intel = new Intel(intelMessages, "", reporterName.trimmed(), dateTime.trimmed(), intelMessage.trimmed(), channelName);
+    intelMessages->addIntel(intel);
 
     for (std::vector<Planets*>::iterator it = planets.begin() ; it != planets.end(); ++it)
     {

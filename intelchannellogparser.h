@@ -1,16 +1,16 @@
-#ifndef CHANNELINTEL_H
-#define CHANNELINTEL_H
+#ifndef INTELCHANNELLOGPARSER_H
+#define INTELCHANNELLOGPARSER_H
 
 #include <QObject>
 #include <QFileSystemWatcher>
 
 class ProviTel;
 
-class ChannelIntel : public QObject
+class IntelChannelLogParser : public QObject
 {
     Q_OBJECT
 public:
-    ChannelIntel(ProviTel *parent = 0, QString name = "", QString file = "");
+    IntelChannelLogParser(ProviTel *parent = 0, QString name = "", QString file = "");
 
     QString getName();
 

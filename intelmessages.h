@@ -1,26 +1,26 @@
 #ifndef INTELMESSAGES_H
 #define INTELMESSAGES_H
 
-#include <QTableWidget>
+#include <QListView>
 #include <QNetworkAccessManager>
+class HTMLDelegate;
+class IntelModel;
+class Intel;
 
-class IntelMessages : public QTableWidget
+class IntelMessages : public QListView
 {
     Q_OBJECT
 
 public:
     IntelMessages(QWidget *parent = 0);
 
-    void addIntel(QString channelName, QString dateTime, QString name, QString message);
+    HTMLDelegate *delegate;
+    IntelModel *model;
 
-    void getPortrait(QString name);
+    void addIntel(Intel* intel);
 
-    QNetworkAccessManager *manager;
-    QString idtest;
-signals:
+private:    
 
-private slots:
-    void portraitReply(QNetworkReply *reply);
 };
 
 #endif // INTELMESSAGES_H

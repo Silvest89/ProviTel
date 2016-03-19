@@ -5,7 +5,7 @@
 #include <QFileSystemWatcher>
 #include <QList>
 
-#include "channelintel.h"
+#include "intelchannellogparser.h"
 
 namespace Ui {
 class ProviTel;
@@ -20,7 +20,7 @@ public:
     ~ProviTel();
 
     QList<QString> channelList;
-    QList<ChannelIntel*> intelChannelList;
+    QList<IntelChannelLogParser*> intelChannelList;
 
 private slots:
     void getLatestIntelChannels();

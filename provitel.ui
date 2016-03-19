@@ -1482,7 +1482,7 @@ QPushButton {
             <number>0</number>
            </property>
            <item>
-            <widget class="IntelMessages" name="tableWidget"/>
+            <widget class="IntelMessages" name="listView"/>
            </item>
           </layout>
          </item>
@@ -1521,7 +1521,7 @@ QPushButton {
   </customwidget>
   <customwidget>
    <class>IntelMessages</class>
-   <extends>QTableWidget</extends>
+   <extends>QListView</extends>
    <header>intelmessages.h</header>
   </customwidget>
  </customwidgets>

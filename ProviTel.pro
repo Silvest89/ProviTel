@@ -11,22 +11,31 @@ greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 TARGET = ProviTel
 TEMPLATE = app
 
-    LIBS += -LC:/OpenSSL-Win32/lib -lubsec
-    INCLUDEPATH += C:/OpenSSL-Win32/include
-
+LIBS += -LC:/OpenSSL-Win32/lib -lubsec
+INCLUDEPATH += C:/OpenSSL-Win32/include
 
 SOURCES += main.cpp\
         provitel.cpp \
     provimap.cpp \
     planets.cpp \
-    channelintel.cpp \
-    intelmessages.cpp
+    intelmessages.cpp \
+    htmldelegate.cpp \
+    intel.cpp \
+    intelmodel.cpp \
+    intelchannellogparser.cpp \
+    filedownloader.cpp \
+    utfu.cpp
 
 HEADERS  += provitel.h \
     provimap.h \
     planets.h \
-    channelintel.h \
-    intelmessages.h
+    intelmessages.h \
+    htmldelegate.h \
+    intel.h \
+    intelmodel.h \
+    intelchannellogparser.h \
+    filedownloader.h \
+    utfu.h
 
 FORMS    += provitel.ui
 
