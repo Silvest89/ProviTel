@@ -32,6 +32,24 @@ void ProviMap::paintEvent(QPaintEvent *e)
     opt.init(this);
     QPainter p(this);
     style()->drawPrimitive(QStyle::PE_Widget, &opt, &p, this);
+    QVector<QPoint> lineDraw;
+    lineDraw << QPoint (40, 45) << QPoint(320, 45); //LF/F-Y
+    lineDraw << QPoint (40, 45) << QPoint(40, 265); //LF/K1
+    lineDraw << QPoint (320, 45) << QPoint(450, 45); //F-Y/8P9
+    lineDraw << QPoint (320, 45) << QPoint(320, 135); //F-Y/3D
+    lineDraw << QPoint (450, 45) << QPoint(580, 65); //8P9/3G
+
+    QPen pen;  // creates a default pen
+
+    pen.setStyle(Qt::SolidLine);
+    pen.setWidth(1.5);
+    pen.setBrush(Qt::black);
+    pen.setCapStyle(Qt::RoundCap);
+    pen.setJoinStyle(Qt::RoundJoin);
+
+    p.setPen(pen);
+
+    p.drawLines(lineDraw);
 }
 
 void ProviMap::updatePlanet(){
@@ -39,8 +57,8 @@ void ProviMap::updatePlanet(){
     qDebug() << "test";
 }
 
-void ProviMap::addPlanet(Planets* planet){
-    planetVect.push_back(planet);
+void ProviMap::addPlanet(Planets &planet){
+    planetVect.push_back(&planet);
 }
 
 void ProviMap::readIntel()

@@ -2,28 +2,34 @@
 #include "planets.h"
 #include <QDebug>
 #include <QTimer>
+#include <QVariant>
 
 Planets::Planets(QWidget *parent) : QPushButton(parent)
 {
     this->name = "";
     this->status = CLEAR;
 
-    ((ProviMap*)parent)->addPlanet(this);
+    ((ProviMap*)parent)->addPlanet(*this);
+    timer = new QTimer(this);
 
     connect(this, SIGNAL (released()), this, SLOT (handleButton()));
+    connect(timer, SIGNAL(timeout()), this, SLOT(updateTimer()));
+
 }
 
 void Planets::handleButton()
 {
-    qDebug() << getName();
-    int value;
-    value = qrand() % ((10 + 1) - 0) + 0;
-    if(value < 5)
-        this->setStyleSheet("QPushButton { background:rgb(255,0,0); }");
-    else
-        this->setStyleSheet("QPushButton { background:rgb(0,255,0); }");
-    setStatus(RED);
 }
+
+void Planets::enterEvent(QEvent *event)
+{
+    setCursor(Qt::PointingHandCursor);
+}
+
+/*void Planets::leaveEvent(QEvent *event)
+{
+  this->QPushButton::leaveEvent(event);
+}*/
 
 void Planets::setText(const QString &text)
 {
@@ -51,10 +57,16 @@ void Planets::setStatus(int status)
 {
     this->status = status;
 
+    if(status == RED)
+        this->setStyleSheet("QPushButton { background:rgb(255,0,0); }");
+    else
+        this->setStyleSheet("QPushButton { background:rgb(0,255,0); }");
+
     statusSince = QDateTime::currentDateTime();
 
-    QTimer *timer = new QTimer(this);
-    connect(timer, SIGNAL(timeout()), this, SLOT(updateTimer()));
+    if(timer->isActive())
+        timer->stop();
+
     timer->start(500);
 }
 
@@ -64,21 +76,44 @@ void Planets::updateTimer()
     QDateTime timeSince = QDateTime::currentDateTime();
     int seconds = statusSince.secsTo(timeSince);
 
-        statusMessage = getName() + "\nclr " + QDateTime::fromTime_t(seconds).toUTC().toString("h:mm:ss");
+    if(status == RED)
+        statusMessage = getName() + "\n" + QDateTime::fromTime_t(seconds).toUTC().toString("h:mm:ss");
+    else
+        statusMessage = getName() + "\nclr" + QDateTime::fromTime_t(seconds).toUTC().toString("h:mm:ss");
     this->setText(statusMessage);
 }
 
 void Planets::checkKeywords(QString message)
 {
-    //if(this->property("keywords") == false)
-        //return;
+    if(getKeywords().isEmpty()){
+        //qDebug() << this->getName() + " empty";
+        return;
+    }
 
-    /*QStringList keywordList = this->property("keywords").toStringList();
+    QStringList keywordList = getKeywords();
+
     QStringListIterator keywordIterator(keywordList);
-    while (keywordIterator.hasNext())
-    {
-        qDebug() << keywordIterator.next().toLocal8Bit().constData();
-        if(message.contains(keywordIterator.next().toLocal8Bit().constData()))
+    while (keywordIterator.hasNext()){
+        if(message.contains(keywordIterator.next().toLocal8Bit().constData())){
              qDebug() << keywordIterator.next().toLocal8Bit().constData();
+             setStatus(RED);
+             break;
+        }
+    }
+    /*while (keywordIterator.hasNext())
+    {
+        //qDebug() << keywordIterator.next().toLocal8Bit().constData();
+        //if(message.contains(keywordIterator.next().toLocal8Bit().constData()))
+             //qDebug() << keywordIterator.next().toLocal8Bit().constData();
     }*/
+}
+
+QStringList Planets::getKeywords(){
+    return keywordsList;
+}
+
+void Planets::setKeywords(QStringList keywords)
+{
+    keywordsList = keywords;
+    //qDebug() << this->getName() << keywordsList.length();
 }

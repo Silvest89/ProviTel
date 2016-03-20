@@ -130,6 +130,9 @@ QPushButton {
      <property name="text">
       <string>LF-2KP</string>
      </property>
+     <property name="keywords" stdset="0">
+      <stringlist/>
+     </property>
     </widget>
     <widget class="Planets" name="PK1L1J">
      <property name="geometry">
@@ -142,6 +145,9 @@ QPushButton {
      </property>
      <property name="text">
       <string>K1L1-J</string>
+     </property>
+     <property name="keywords" stdset="0">
+      <stringlist/>
      </property>
     </widget>
     <widget class="Planets" name="PMVCJE">
@@ -156,6 +162,9 @@ QPushButton {
      <property name="text">
       <string>MVCJ-E</string>
      </property>
+     <property name="keywords" stdset="0">
+      <stringlist/>
+     </property>
     </widget>
     <widget class="Planets" name="PFYH5B">
      <property name="geometry">
@@ -168,6 +177,9 @@ QPushButton {
      </property>
      <property name="text">
       <string>F-YH5B</string>
+     </property>
+     <property name="keywords" stdset="0">
+      <stringlist/>
      </property>
     </widget>
     <widget class="Planets" name="PBK4YC">
@@ -182,6 +194,9 @@ QPushButton {
      <property name="text">
       <string>BK4-YC</string>
      </property>
+     <property name="keywords" stdset="0">
+      <stringlist/>
+     </property>
     </widget>
     <widget class="Planets" name="P8P9BM">
      <property name="geometry">
@@ -194,6 +209,9 @@ QPushButton {
      </property>
      <property name="text">
       <string>8P9-BM</string>
+     </property>
+     <property name="keywords" stdset="0">
+      <stringlist/>
      </property>
     </widget>
     <widget class="Planets" name="P3DCQU">
@@ -208,6 +226,9 @@ QPushButton {
      <property name="text">
       <string>3D-CQU</string>
      </property>
+     <property name="keywords" stdset="0">
+      <stringlist/>
+     </property>
     </widget>
     <widget class="Planets" name="P3KBJ0">
      <property name="geometry">
@@ -220,6 +241,9 @@ QPushButton {
      </property>
      <property name="text">
       <string>3KB-J0</string>
+     </property>
+     <property name="keywords" stdset="0">
+      <stringlist/>
      </property>
     </widget>
     <widget class="Planets" name="P0BHLZ">
@@ -234,6 +258,9 @@ QPushButton {
      <property name="text">
       <string>0B-HLZ</string>
      </property>
+     <property name="keywords" stdset="0">
+      <stringlist/>
+     </property>
     </widget>
     <widget class="Planets" name="PIMGAB">
      <property name="geometry">
@@ -246,6 +273,9 @@ QPushButton {
      </property>
      <property name="text">
       <string>I-MGAB</string>
+     </property>
+     <property name="keywords" stdset="0">
+      <stringlist/>
      </property>
     </widget>
     <widget class="Planets" name="P18XAC">
@@ -260,6 +290,9 @@ QPushButton {
      <property name="text">
       <string>18XA-C</string>
      </property>
+     <property name="keywords" stdset="0">
+      <stringlist/>
+     </property>
     </widget>
     <widget class="Planets" name="P3GXFU">
      <property name="geometry">
@@ -272,6 +305,9 @@ QPushButton {
      </property>
      <property name="text">
       <string>3GXF-U</string>
+     </property>
+     <property name="keywords" stdset="0">
+      <stringlist/>
      </property>
     </widget>
     <widget class="Planets" name="PVKIT7">
@@ -286,6 +322,9 @@ QPushButton {
      <property name="text">
       <string>VKI-T7</string>
      </property>
+     <property name="keywords" stdset="0">
+      <stringlist/>
+     </property>
     </widget>
     <widget class="Planets" name="PISR7P">
      <property name="geometry">
@@ -298,6 +337,9 @@ QPushButton {
      </property>
      <property name="text">
       <string>IS-R7P</string>
+     </property>
+     <property name="keywords" stdset="0">
+      <stringlist/>
      </property>
     </widget>
     <widget class="Planets" name="PDPJD4">
@@ -312,6 +354,9 @@ QPushButton {
      <property name="text">
       <string>DP-JD4</string>
      </property>
+     <property name="keywords" stdset="0">
+      <stringlist/>
+     </property>
     </widget>
     <widget class="Planets" name="PQRK85">
      <property name="geometry">
@@ -324,6 +369,9 @@ QPushButton {
      </property>
      <property name="text">
       <string>QR-K85</string>
+     </property>
+     <property name="keywords" stdset="0">
+      <stringlist/>
      </property>
     </widget>
     <widget class="Planets" name="P5IO8U">
@@ -338,6 +386,9 @@ QPushButton {
      <property name="text">
       <string>5IO8-U</string>
      </property>
+     <property name="keywords" stdset="0">
+      <stringlist/>
+     </property>
     </widget>
     <widget class="Planets" name="PFC3YI">
      <property name="geometry">
@@ -350,6 +401,9 @@ QPushButton {
      </property>
      <property name="text">
       <string>FC-3YI</string>
+     </property>
+     <property name="keywords" stdset="0">
+      <stringlist/>
      </property>
     </widget>
     <widget class="Planets" name="PUHYMT">
@@ -364,6 +418,9 @@ QPushButton {
      <property name="text">
       <string>U-HYMT</string>
      </property>
+     <property name="keywords" stdset="0">
+      <stringlist/>
+     </property>
     </widget>
     <widget class="Planets" name="P49GCR">
      <property name="geometry">
@@ -377,7 +434,7 @@ QPushButton {
      <property name="text">
       <string>49GC-R</string>
      </property>
-     <property name="keywordList" stdset="0">
+     <property name="keywords" stdset="0">
       <stringlist/>
      </property>
     </widget>
@@ -393,6 +450,9 @@ QPushButton {
      <property name="text">
       <string>9UY4-H</string>
      </property>
+     <property name="keywords" stdset="0">
+      <stringlist/>
+     </property>
     </widget>
     <widget class="Planets" name="PHGKI6">
      <property name="geometry">
@@ -405,6 +465,9 @@ QPushButton {
      </property>
      <property name="text">
       <string>H-GKI6</string>
+     </property>
+     <property name="keywords" stdset="0">
+      <stringlist/>
      </property>
     </widget>
     <widget class="Planets" name="PYQB22">
@@ -419,6 +482,9 @@ QPushButton {
      <property name="text">
       <string>YQB-22</string>
      </property>
+     <property name="keywords" stdset="0">
+      <stringlist/>
+     </property>
     </widget>
     <widget class="Planets" name="PH6CX8">
      <property name="geometry">
@@ -431,6 +497,9 @@ QPushButton {
      </property>
      <property name="text">
       <string>H6-CX8</string>
+     </property>
+     <property name="keywords" stdset="0">
+      <stringlist/>
      </property>
     </widget>
     <widget class="Planets" name="PSHINTAHT">
@@ -445,6 +514,9 @@ QPushButton {
      <property name="text">
       <string>Shintaht</string>
      </property>
+     <property name="keywords" stdset="0">
+      <stringlist/>
+     </property>
     </widget>
     <widget class="Planets" name="PD6WS1">
      <property name="geometry">
@@ -457,6 +529,9 @@ QPushButton {
      </property>
      <property name="text">
       <string>D-6WS1</string>
+     </property>
+     <property name="keywords" stdset="0">
+      <stringlist/>
      </property>
     </widget>
     <widget class="Planets" name="PSII89">
@@ -471,6 +546,9 @@ QPushButton {
      <property name="text">
       <string>SI-I89</string>
      </property>
+     <property name="keywords" stdset="0">
+      <stringlist/>
+     </property>
     </widget>
     <widget class="Planets" name="PD61AG">
      <property name="geometry">
@@ -483,6 +561,9 @@ QPushButton {
      </property>
      <property name="text">
       <string>D61A-G</string>
+     </property>
+     <property name="keywords" stdset="0">
+      <stringlist/>
      </property>
     </widget>
     <widget class="Planets" name="PYMPWL">
@@ -497,6 +578,9 @@ QPushButton {
      <property name="text">
       <string>Y-MPWL</string>
      </property>
+     <property name="keywords" stdset="0">
+      <stringlist/>
+     </property>
     </widget>
     <widget class="Planets" name="PKARI">
      <property name="geometry">
@@ -509,6 +593,9 @@ QPushButton {
      </property>
      <property name="text">
       <string>Kari</string>
+     </property>
+     <property name="keywords" stdset="0">
+      <stringlist/>
      </property>
     </widget>
     <widget class="Planets" name="P9FOB2">
@@ -523,6 +610,9 @@ QPushButton {
      <property name="text">
       <string>9-FOB2</string>
      </property>
+     <property name="keywords" stdset="0">
+      <stringlist/>
+     </property>
     </widget>
     <widget class="Planets" name="P4BNQN">
      <property name="geometry">
@@ -535,6 +625,9 @@ QPushButton {
      </property>
      <property name="text">
       <string>4B-NQN</string>
+     </property>
+     <property name="keywords" stdset="0">
+      <stringlist/>
      </property>
     </widget>
     <widget class="Planets" name="PG5EN2">
@@ -549,6 +642,9 @@ QPushButton {
      <property name="text">
       <string>G-5EN2</string>
      </property>
+     <property name="keywords" stdset="0">
+      <stringlist/>
+     </property>
     </widget>
     <widget class="Planets" name="PASSAH">
      <property name="geometry">
@@ -561,6 +657,9 @@ QPushButton {
      </property>
      <property name="text">
       <string>Assah</string>
+     </property>
+     <property name="keywords" stdset="0">
+      <stringlist/>
      </property>
     </widget>
     <widget class="Planets" name="PYWS0Z">
@@ -575,6 +674,9 @@ QPushButton {
      <property name="text">
       <string>YWS0-Z</string>
      </property>
+     <property name="keywords" stdset="0">
+      <stringlist/>
+     </property>
     </widget>
     <widget class="Planets" name="PXHQ7V">
      <property name="geometry">
@@ -587,6 +689,9 @@ QPushButton {
      </property>
      <property name="text">
       <string>XHQ-7V</string>
+     </property>
+     <property name="keywords" stdset="0">
+      <stringlist/>
      </property>
     </widget>
     <widget class="Planets" name="PKBP7G">
@@ -601,6 +706,9 @@ QPushButton {
      <property name="text">
       <string>KBP7G</string>
      </property>
+     <property name="keywords" stdset="0">
+      <stringlist/>
+     </property>
     </widget>
     <widget class="Planets" name="PDITAL">
      <property name="geometry">
@@ -613,6 +721,9 @@ QPushButton {
      </property>
      <property name="text">
       <string>Dital</string>
+     </property>
+     <property name="keywords" stdset="0">
+      <stringlist/>
      </property>
     </widget>
     <widget class="Planets" name="PBWPLZ">
@@ -627,6 +738,9 @@ QPushButton {
      <property name="text">
       <string>B-WPLZ</string>
      </property>
+     <property name="keywords" stdset="0">
+      <stringlist/>
+     </property>
     </widget>
     <widget class="Planets" name="PTUO0T">
      <property name="geometry">
@@ -639,6 +753,9 @@ QPushButton {
      </property>
      <property name="text">
       <string>TU-O0T</string>
+     </property>
+     <property name="keywords" stdset="0">
+      <stringlist/>
      </property>
     </widget>
     <widget class="Planets" name="PEYCML">
@@ -653,6 +770,9 @@ QPushButton {
      <property name="text">
       <string>E-YCML</string>
      </property>
+     <property name="keywords" stdset="0">
+      <stringlist/>
+     </property>
     </widget>
     <widget class="Planets" name="PY9MDG">
      <property name="geometry">
@@ -665,6 +785,9 @@ QPushButton {
      </property>
      <property name="text">
       <string>Y9-MDG</string>
+     </property>
+     <property name="keywords" stdset="0">
+      <stringlist/>
      </property>
     </widget>
     <widget class="Planets" name="PJEIVE">
@@ -679,6 +802,9 @@ QPushButton {
      <property name="text">
       <string>JEIV-E</string>
      </property>
+     <property name="keywords" stdset="0">
+      <stringlist/>
+     </property>
     </widget>
     <widget class="Planets" name="PDNR7M">
      <property name="geometry">
@@ -691,6 +817,9 @@ QPushButton {
      </property>
      <property name="text">
       <string>DNR-7M</string>
+     </property>
+     <property name="keywords" stdset="0">
+      <stringlist/>
      </property>
     </widget>
     <widget class="Planets" name="PK1Y5H">
@@ -705,6 +834,9 @@ QPushButton {
      <property name="text">
       <string>K1Y-5H</string>
      </property>
+     <property name="keywords" stdset="0">
+      <stringlist/>
+     </property>
     </widget>
     <widget class="Planets" name="POY5JQ">
      <property name="geometry">
@@ -717,6 +849,9 @@ QPushButton {
      </property>
      <property name="text">
       <string>O-Y5JQ</string>
+     </property>
+     <property name="keywords" stdset="0">
+      <stringlist/>
      </property>
     </widget>
     <widget class="Planets" name="PNRMSH">
@@ -731,6 +866,9 @@ QPushButton {
      <property name="text">
       <string>N-RMSH</string>
      </property>
+     <property name="keywords" stdset="0">
+      <stringlist/>
+     </property>
     </widget>
     <widget class="Planets" name="PIWZ3C">
      <property name="geometry">
@@ -743,6 +881,9 @@ QPushButton {
      </property>
      <property name="text">
       <string>IWZ3-C</string>
+     </property>
+     <property name="keywords" stdset="0">
+      <stringlist/>
      </property>
     </widget>
     <widget class="Planets" name="PZQZ3Y">
@@ -757,6 +898,9 @@ QPushButton {
      <property name="text">
       <string>ZQ-Z3Y</string>
      </property>
+     <property name="keywords" stdset="0">
+      <stringlist/>
+     </property>
     </widget>
     <widget class="Planets" name="POXIYV">
      <property name="geometry">
@@ -769,6 +913,9 @@ QPushButton {
      </property>
      <property name="text">
       <string>OXIY-V</string>
+     </property>
+     <property name="keywords" stdset="0">
+      <stringlist/>
      </property>
     </widget>
     <widget class="Planets" name="PGAOTH">
@@ -783,6 +930,9 @@ QPushButton {
      <property name="text">
       <string>G-AOTH</string>
      </property>
+     <property name="keywords" stdset="0">
+      <stringlist/>
+     </property>
     </widget>
     <widget class="Planets" name="PTA3T3">
      <property name="geometry">
@@ -795,6 +945,9 @@ QPushButton {
      </property>
      <property name="text">
       <string>TA3T-3</string>
+     </property>
+     <property name="keywords" stdset="0">
+      <stringlist/>
      </property>
     </widget>
     <widget class="Planets" name="PUL7I8">
@@ -809,6 +962,9 @@ QPushButton {
      <property name="text">
       <string>UL-7I8</string>
      </property>
+     <property name="keywords" stdset="0">
+      <stringlist/>
+     </property>
     </widget>
     <widget class="Planets" name="PBRN97">
      <property name="geometry">
@@ -821,6 +977,9 @@ QPushButton {
      </property>
      <property name="text">
       <string>BR-N97</string>
+     </property>
+     <property name="keywords" stdset="0">
+      <stringlist/>
      </property>
     </widget>
     <widget class="Planets" name="PERVKP">
@@ -835,6 +994,9 @@ QPushButton {
      <property name="text">
       <string>ERVK-P</string>
      </property>
+     <property name="keywords" stdset="0">
+      <stringlist/>
+     </property>
     </widget>
     <widget class="Planets" name="PS25CK">
      <property name="geometry">
@@ -847,6 +1009,9 @@ QPushButton {
      </property>
      <property name="text">
       <string>S25C-K</string>
+     </property>
+     <property name="keywords" stdset="0">
+      <stringlist/>
      </property>
     </widget>
     <widget class="Planets" name="P2TEGJ">
@@ -861,6 +1026,9 @@ QPushButton {
      <property name="text">
       <string>2-TEGJ</string>
      </property>
+     <property name="keywords" stdset="0">
+      <stringlist/>
+     </property>
     </widget>
     <widget class="Planets" name="PAY24L">
      <property name="geometry">
@@ -873,6 +1041,9 @@ QPushButton {
      </property>
      <property name="text">
       <string>AY-24L</string>
+     </property>
+     <property name="keywords" stdset="0">
+      <stringlist/>
      </property>
     </widget>
     <widget class="Planets" name="PX6ABY">
@@ -887,6 +1058,9 @@ QPushButton {
      <property name="text">
       <string>X6AB-Y</string>
      </property>
+     <property name="keywords" stdset="0">
+      <stringlist/>
+     </property>
     </widget>
     <widget class="Planets" name="PXR3NM">
      <property name="geometry">
@@ -899,6 +1073,9 @@ QPushButton {
      </property>
      <property name="text">
       <string>X-R3NM</string>
+     </property>
+     <property name="keywords" stdset="0">
+      <stringlist/>
      </property>
     </widget>
     <widget class="Planets" name="PR3K7K">
@@ -913,6 +1090,9 @@ QPushButton {
      <property name="text">
       <string>R3-K7K</string>
      </property>
+     <property name="keywords" stdset="0">
+      <stringlist/>
+     </property>
     </widget>
     <widget class="Planets" name="P8BVLX">
      <property name="geometry">
@@ -925,6 +1105,9 @@ QPushButton {
      </property>
      <property name="text">
       <string>8B-VLX</string>
+     </property>
+     <property name="keywords" stdset="0">
+      <stringlist/>
      </property>
     </widget>
     <widget class="Planets" name="PGB22J">
@@ -939,6 +1122,9 @@ QPushButton {
      <property name="text">
       <string>G-B22J</string>
      </property>
+     <property name="keywords" stdset="0">
+      <stringlist/>
+     </property>
     </widget>
     <widget class="Planets" name="PMISABA">
      <property name="geometry">
@@ -951,6 +1137,9 @@ QPushButton {
      </property>
      <property name="text">
       <string>Misaba</string>
+     </property>
+     <property name="keywords" stdset="0">
+      <stringlist/>
      </property>
     </widget>
     <widget class="Planets" name="PN8XAL">
@@ -965,6 +1154,9 @@ QPushButton {
      <property name="text">
       <string>N8XA-L</string>
      </property>
+     <property name="keywords" stdset="0">
+      <stringlist/>
+     </property>
     </widget>
     <widget class="Planets" name="P18GZM">
      <property name="geometry">
@@ -977,6 +1169,9 @@ QPushButton {
      </property>
      <property name="text">
       <string>18-GZM</string>
+     </property>
+     <property name="keywords" stdset="0">
+      <stringlist/>
      </property>
     </widget>
     <widget class="Planets" name="P11I53">
@@ -991,6 +1186,9 @@ QPushButton {
      <property name="text">
       <string>1-1I53</string>
      </property>
+     <property name="keywords" stdset="0">
+      <stringlist/>
+     </property>
     </widget>
     <widget class="Planets" name="PZTLPU">
      <property name="geometry">
@@ -1003,6 +1201,9 @@ QPushButton {
      </property>
      <property name="text">
       <string>ZT-LPU</string>
+     </property>
+     <property name="keywords" stdset="0">
+      <stringlist/>
      </property>
     </widget>
     <widget class="Planets" name="PAYYCU">
@@ -1017,6 +1218,9 @@ QPushButton {
      <property name="text">
       <string>AY-YCU</string>
      </property>
+     <property name="keywords" stdset="0">
+      <stringlist/>
+     </property>
     </widget>
     <widget class="Planets" name="P2VCS5">
      <property name="geometry">
@@ -1029,6 +1233,9 @@ QPushButton {
      </property>
      <property name="text">
       <string>2V-CS5</string>
+     </property>
+     <property name="keywords" stdset="0">
+      <stringlist/>
      </property>
     </widget>
     <widget class="Planets" name="PH9J8N">
@@ -1043,6 +1250,9 @@ QPushButton {
      <property name="text">
       <string>H9-J8N</string>
      </property>
+     <property name="keywords" stdset="0">
+      <stringlist/>
+     </property>
     </widget>
     <widget class="Planets" name="PC1HAB">
      <property name="geometry">
@@ -1055,6 +1265,9 @@ QPushButton {
      </property>
      <property name="text">
       <string>C1-HAB</string>
+     </property>
+     <property name="keywords" stdset="0">
+      <stringlist/>
      </property>
     </widget>
     <widget class="Planets" name="PGA9P0">
@@ -1069,6 +1282,9 @@ QPushButton {
      <property name="text">
       <string>GA9P-0</string>
      </property>
+     <property name="keywords" stdset="0">
+      <stringlist/>
+     </property>
     </widget>
     <widget class="Planets" name="PHP6Z6">
      <property name="geometry">
@@ -1081,6 +1297,9 @@ QPushButton {
      </property>
      <property name="text">
       <string>HP-6Z6</string>
+     </property>
+     <property name="keywords" stdset="0">
+      <stringlist/>
      </property>
     </widget>
     <widget class="Planets" name="P7YWVS">
@@ -1095,6 +1314,9 @@ QPushButton {
      <property name="text">
       <string>7YWV-S</string>
      </property>
+     <property name="keywords" stdset="0">
+      <stringlist/>
+     </property>
     </widget>
     <widget class="Planets" name="PTXJII">
      <property name="geometry">
@@ -1107,6 +1329,9 @@ QPushButton {
      </property>
      <property name="text">
       <string>TXJ-II</string>
+     </property>
+     <property name="keywords" stdset="0">
+      <stringlist/>
      </property>
     </widget>
     <widget class="Planets" name="P7MDS1">
@@ -1121,6 +1346,9 @@ QPushButton {
      <property name="text">
       <string>7MD-S1</string>
      </property>
+     <property name="keywords" stdset="0">
+      <stringlist/>
+     </property>
     </widget>
     <widget class="Planets" name="PTRPFU">
      <property name="geometry">
@@ -1133,6 +1361,9 @@ QPushButton {
      </property>
      <property name="text">
       <string>T-RPFU</string>
+     </property>
+     <property name="keywords" stdset="0">
+      <stringlist/>
      </property>
     </widget>
     <widget class="Planets" name="PMH9CS">
@@ -1147,6 +1378,9 @@ QPushButton {
      <property name="text">
       <string>MH9C-S</string>
      </property>
+     <property name="keywords" stdset="0">
+      <stringlist/>
+     </property>
     </widget>
     <widget class="Planets" name="PFX7EM">
      <property name="geometry">
@@ -1159,6 +1393,9 @@ QPushButton {
      </property>
      <property name="text">
       <string>FX-7EM</string>
+     </property>
+     <property name="keywords" stdset="0">
+      <stringlist/>
      </property>
     </widget>
     <widget class="Planets" name="PDGTMI">
@@ -1173,6 +1410,9 @@ QPushButton {
      <property name="text">
       <string>D-GTMI</string>
      </property>
+     <property name="keywords" stdset="0">
+      <stringlist/>
+     </property>
     </widget>
     <widget class="Planets" name="PFSW3C">
      <property name="geometry">
@@ -1185,6 +1425,9 @@ QPushButton {
      </property>
      <property name="text">
       <string>FSW-3C</string>
+     </property>
+     <property name="keywords" stdset="0">
+      <stringlist/>
      </property>
     </widget>
     <widget class="Planets" name="PTURI6">
@@ -1199,6 +1442,9 @@ QPushButton {
      <property name="text">
       <string>TU-RI6</string>
      </property>
+     <property name="keywords" stdset="0">
+      <stringlist/>
+     </property>
     </widget>
     <widget class="Planets" name="PS9AX">
      <property name="geometry">
@@ -1211,6 +1457,9 @@ QPushButton {
      </property>
      <property name="text">
       <string>S9-AX</string>
+     </property>
+     <property name="keywords" stdset="0">
+      <stringlist/>
      </property>
     </widget>
     <widget class="Planets" name="P6OQJV">
@@ -1225,6 +1474,9 @@ QPushButton {
      <property name="text">
       <string>6-OQJV</string>
      </property>
+     <property name="keywords" stdset="0">
+      <stringlist/>
+     </property>
     </widget>
     <widget class="Planets" name="P08ZJJ">
      <property name="geometry">
@@ -1237,6 +1489,9 @@ QPushButton {
      </property>
      <property name="text">
       <string>08Z-JJ</string>
+     </property>
+     <property name="keywords" stdset="0">
+      <stringlist/>
      </property>
     </widget>
     <widget class="Planets" name="PX4WZD">
@@ -1251,6 +1506,9 @@ QPushButton {
      <property name="text">
       <string>X-4WZD</string>
      </property>
+     <property name="keywords" stdset="0">
+      <stringlist/>
+     </property>
     </widget>
     <widget class="Planets" name="PI7S1S">
      <property name="geometry">
@@ -1263,6 +1521,9 @@ QPushButton {
      </property>
      <property name="text">
       <string>I7S-1S</string>
+     </property>
+     <property name="keywords" stdset="0">
+      <stringlist/>
      </property>
     </widget>
     <widget class="Planets" name="PG7AQ7">
@@ -1277,6 +1538,9 @@ QPushButton {
      <property name="text">
       <string>G7AQ-7</string>
      </property>
+     <property name="keywords" stdset="0">
+      <stringlist/>
+     </property>
     </widget>
     <widget class="Planets" name="PQBLBV">
      <property name="geometry">
@@ -1289,6 +1553,9 @@ QPushButton {
      </property>
      <property name="text">
       <string>QBL-BV</string>
+     </property>
+     <property name="keywords" stdset="0">
+      <stringlist/>
      </property>
     </widget>
     <widget class="Planets" name="PF9EKX">
@@ -1303,6 +1570,9 @@ QPushButton {
      <property name="text">
       <string>F9E-KX</string>
      </property>
+     <property name="keywords" stdset="0">
+      <stringlist/>
+     </property>
     </widget>
     <widget class="Planets" name="PI539">
      <property name="geometry">
@@ -1315,6 +1585,9 @@ QPushButton {
      </property>
      <property name="text">
       <string>PI5-39</string>
+     </property>
+     <property name="keywords" stdset="0">
+      <stringlist/>
      </property>
     </widget>
     <widget class="Planets" name="PINQWR">
@@ -1329,6 +1602,9 @@ QPushButton {
      <property name="text">
       <string>INQ-WR</string>
      </property>
+     <property name="keywords" stdset="0">
+      <stringlist/>
+     </property>
     </widget>
     <widget class="Planets" name="PGN7XY">
      <property name="geometry">
@@ -1341,6 +1617,9 @@ QPushButton {
      </property>
      <property name="text">
       <string>GN7-XY</string>
+     </property>
+     <property name="keywords" stdset="0">
+      <stringlist/>
      </property>
     </widget>
     <widget class="Planets" name="PQOSRRI">
@@ -1355,6 +1634,9 @@ QPushButton {
      <property name="text">
       <string>QO-SRI</string>
      </property>
+     <property name="keywords" stdset="0">
+      <stringlist/>
+     </property>
     </widget>
     <widget class="Planets" name="PFDTOO">
      <property name="geometry">
@@ -1368,6 +1650,9 @@ QPushButton {
      <property name="text">
       <string>F-DTOO</string>
      </property>
+     <property name="keywords" stdset="0">
+      <stringlist/>
+     </property>
     </widget>
     <widget class="Planets" name="P5KGPY">
      <property name="geometry">
@@ -1380,6 +1665,9 @@ QPushButton {
      </property>
      <property name="text">
       <string>5KG-PY</string>
+     </property>
+     <property name="keywords" stdset="0">
+      <stringlist/>
      </property>
     </widget>
    </widget>

@@ -4,12 +4,15 @@
 #include <QPushButton>
 #include <QDateTime>
 #include "provimap.h"
+#include <QVariant>
+#include <QTimer>
 
 enum STATUS { RED = 0 , CLEAR = 1};
 
 class Planets : public QPushButton
 {
     Q_OBJECT
+    Q_PROPERTY(QStringList keywords READ getKeywords WRITE setKeywords)
 public:
     Planets(QWidget *parent = 0);
 
@@ -25,10 +28,17 @@ public:
     int seconds;
 
     void checkKeywords(QString message);
+    QStringList getKeywords();
+    void setKeywords(QStringList keywords);
+
 
 private:    
     QString name;
     int status;
+    QStringList keywordsList;
+    QTimer *timer;
+
+    virtual void enterEvent( QEvent* e );
 
 private slots:
     void handleButton();

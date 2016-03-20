@@ -26,9 +26,9 @@ ProviTel::ProviTel(QWidget *parent) :
     // connect(&watcher,SIGNAL(fileChanged(QString)),this,SLOT(logsDirUpdated(QString)));
     //connect(&watcher, SIGNAL(directoryChanged(QString)), this, SLOT(logsDirUpdated(QString)));
 
-    channelList.append("TheCitadel");
+    //channelList.append("TheCitadel");
     channelList.append("4THINTEL");
-    channelList.append("North Provi Intel");
+    //channelList.append("North Provi Intel");
 
     QTimer::singleShot(1500, this, SLOT(getLatestIntelChannels()));
 }
@@ -67,8 +67,10 @@ void ProviTel::getLatestIntelChannels()
 
 void ProviTel::processIntel(QString channelName, QString intelMessage)
 {
-    ProviMap *proviMap = this->findChild<ProviMap *>(QString(), Qt::FindChildrenRecursively);
-    std::vector<Planets*> planets = proviMap->getPlanets();
+    //ProviMap *proviMap = this->findChild<ProviMap *>(QString(), Qt::FindChildrenRecursively);
+    //std::vector<Planets*> planets = proviMap->getPlanets();
+
+    QList<Planets*> planetList = this->findChildren<Planets *>(QString(), Qt::FindChildrenRecursively);
 
     QRegularExpression regex("\\[(.*)\\]");
     QRegularExpressionMatch match = regex.match(intelMessage);
@@ -86,15 +88,15 @@ void ProviTel::processIntel(QString channelName, QString intelMessage)
 
     //qDebug() << intelMessage.trimmed();
 
-    IntelMessages *intelMessages = this->findChild<IntelMessages *>(QString(), Qt::FindChildrenRecursively);
-    Intel *intel = new Intel(intelMessages, "", reporterName.trimmed(), dateTime.trimmed(), intelMessage.trimmed(), channelName);
-    intelMessages->addIntel(intel);
+    //IntelMessages *intelMessages = this->findChild<IntelMessages *>(QString(), Qt::FindChildrenRecursively);
+    //Intel *intel = new Intel(intelMessages, "", reporterName.trimmed(), dateTime.trimmed(), intelMessage.trimmed(), channelName);
+    //intelMessages->addIntel(intel);
 
-    for (std::vector<Planets*>::iterator it = planets.begin() ; it != planets.end(); ++it)
+    QList<Planets*>::iterator i;
+    for (i = planetList.begin(); i != planetList.end(); ++i)
     {
-        Planets *planet = (Planets*)(&it);
-        planet->checkKeywords(intelMessage.trimmed());
-
-        //qDebug() << planet->getName();
+        Planets *planet = (Planets*)(*i);
+        planet->checkKeywords(intelMessage);
     }
+
 }

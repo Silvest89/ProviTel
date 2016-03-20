@@ -15,7 +15,7 @@ public:
     void updatePlanet();
 
     std::vector<Planets*> planetVect;
-    void addPlanet(Planets* planet);
+    void addPlanet(Planets &planet);
 
     std::vector<Planets*> getPlanets();
 
