@@ -19,8 +19,7 @@
 
 IntelMessages::IntelMessages(QWidget *parent) : QListView(parent)
 {
-    std::vector<Intel*> intel_;
-    model = new IntelModel(intel_);
+    model = new IntelModel();
     delegate = new HTMLDelegate();
     this->setModel(model);
 

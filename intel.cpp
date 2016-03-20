@@ -14,6 +14,7 @@
 
 //QNetworkAccessManager *Intel::manager = new QNetworkAccessManager();
 QMap<QString, QPixmap> Intel::portraitMap;
+
 Intel::Intel(IntelMessages *intelMessage, QString system, QString reporter, QString dateTime, QString message, QString channelName, QObject *parent) : QObject(parent)
 {
     this->intelMessage = intelMessage;
@@ -25,6 +26,7 @@ Intel::Intel(IntelMessages *intelMessage, QString system, QString reporter, QStr
     manager = new QNetworkAccessManager();
 
     getPortrait(reporter);
+
 }
 
 QString Intel::getReporter()
@@ -51,14 +53,20 @@ void Intel::getPortrait(QString name){
     if(!manager)
         manager = new QNetworkAccessManager();
 
-    QUrl url("https://api.eveonline.com/eve/CharacterID.xml.aspx");
-    QUrlQuery query;
-    query.addQueryItem("names", name);
-    url.setQuery(query);
+    if(portraitMap.contains(getReporter())){
+        portraitImage = portraitMap.value(getReporter());
+        //intelMessage->model->layoutChanged();
+    }
+    else{
+        QUrl url("https://api.eveonline.com/eve/CharacterID.xml.aspx");
+        QUrlQuery query;
+        query.addQueryItem("names", name);
+        url.setQuery(query);
 
-    QNetworkRequest request(url);
-    manager->get(request);
-    connect(manager, SIGNAL(finished(QNetworkReply*)), this, SLOT(portraitReply(QNetworkReply*)));
+        QNetworkRequest request(url);
+        manager->get(request);
+        connect(manager, SIGNAL(finished(QNetworkReply*)), this, SLOT(portraitReply(QNetworkReply*)));
+    }
 
 }
 
@@ -79,17 +87,10 @@ void Intel::portraitReply(QNetworkReply *reply)
             //qDebug() << Child.attribute("characterID");
             this->characterId = Child.attribute("characterID");
 
-            if(portraitMap.contains(this->characterId))
-            {
-                portraitImage = portraitMap.value(this->characterId);
-                intelMessage->model->layoutChanged();
-            }
-            else{
-                QUrl imageUrl("https://image.eveonline.com/Character/" + this->characterId + "_32.jpg");
-                m_pImgCtrl = new FileDownloader(imageUrl, this);
+            QUrl imageUrl("https://image.eveonline.com/Character/" + this->characterId + "_32.jpg");
+            m_pImgCtrl = new FileDownloader(imageUrl, this);
+            connect(m_pImgCtrl, SIGNAL (downloaded()), this, SLOT (loadImage()));
 
-                connect(m_pImgCtrl, SIGNAL (downloaded()), this, SLOT (loadImage()));
-            }
             break;
         }
         Child = Child.nextSibling().toElement();
@@ -110,7 +111,7 @@ QString Intel::getIntelTextLayout()
 void Intel::loadImage()
 {
     portraitImage.loadFromData(m_pImgCtrl->downloadedData());
-    portraitMap.insert(this->characterId, portraitImage);
+    portraitMap.insert(getReporter(), portraitImage);
     intelMessage->model->layoutChanged();
 }
 

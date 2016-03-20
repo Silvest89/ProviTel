@@ -9,7 +9,7 @@ class IntelModel : public QAbstractListModel
     Q_OBJECT
 
 public:
-    explicit IntelModel(const std::vector<Intel*>& intel, QObject* parent = 0);
+    explicit IntelModel(QObject* parent = 0);
 
     // Basic functionality:
     int rowCount(const QModelIndex &parent = QModelIndex()) const override;

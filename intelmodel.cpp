@@ -5,10 +5,10 @@
 #include <QLabel>
 #include <QPixmap>
 
-IntelModel::IntelModel(const std::vector<Intel*>& intel, QObject *parent)
+IntelModel::IntelModel(QObject *parent)
     : QAbstractListModel(parent)
 {
-    intel_ = intel;
+    //intel_ = intel;
 }
 
 int IntelModel::rowCount(const QModelIndex &parent) const

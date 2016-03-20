@@ -60,6 +60,8 @@ void ProviTel::getLatestIntelChannels()
             intelChannelList.push_back(intel);
             channelList.removeOne(fileName);
         }
+        if(channelList.isEmpty())
+            break;
     }
 }
 

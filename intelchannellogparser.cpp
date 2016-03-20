@@ -6,7 +6,8 @@
 #include <QMessageBox>
 #include <QTimer>
 #include <QFile>
-
+#include <QThread>
+#include <QtConcurrent/QtConcurrentRun>
 
 IntelChannelLogParser::IntelChannelLogParser(ProviTel *parent, QString name, QString file)
 {
@@ -19,7 +20,8 @@ IntelChannelLogParser::IntelChannelLogParser(ProviTel *parent, QString name, QSt
     fileLocation = QStandardPaths::writableLocation(QStandardPaths::DocumentsLocation) + "/EVE/logs/Chatlogs/" + file;
 
     connect(this, SIGNAL(intelFound(QString, QString)), proviTel, SLOT(processIntel(QString, QString)));
-    QTimer::singleShot(1500, this, SLOT(checkIntel()));
+    //QTimer::singleShot(1500, this, SLOT(checkIntel()));
+    QtConcurrent::run(this,&IntelChannelLogParser::checkIntel);
 }
 
 
@@ -30,48 +32,51 @@ QString IntelChannelLogParser::getName()
 
 void IntelChannelLogParser::checkIntel()
 {
-    QFile inputFile(fileLocation);
-    if (inputFile.open(QIODevice::ReadOnly))
-    {
-        QTextStream in(&inputFile);
-        bool newIntel = false;
-        while (!in.atEnd())
+    while(true){
+        QFile inputFile(fileLocation);
+        if (inputFile.open(QIODevice::ReadOnly))
         {
-
-            QString newLine = in.readLine();
-            if(in.atEnd())
+            QTextStream in(&inputFile);
+            bool newIntel = false;
+            while (!in.atEnd())
             {
-                if(latestIntel.compare("") == 0 || latestIntel.compare(newLine) != 0)
-                {
-                    latestIntel = newLine;
-                    if(!initialSetup)
-                    {
-                        //qDebug() << getName() << " " << latestIntel.toStdString().c_str();
-                        transferIntel(latestIntel.toStdString().c_str());
-                    }
-                }
 
-            }
-            else{
-                if(newIntel)
+                QString newLine = in.readLine();
+                if(in.atEnd())
                 {
-                    //latestIntel = newLine;
-                    if(!initialSetup)
+                    if(latestIntel.compare("") == 0 || latestIntel.compare(newLine) != 0)
                     {
-                        //qDebug() << getName() << " " << newLine.toStdString().c_str();
-                        transferIntel(newLine.toStdString().c_str());
+                        latestIntel = newLine;
+                        if(!initialSetup)
+                        {
+                            //qDebug() << getName() << " " << latestIntel.toStdString().c_str();
+                            transferIntel(latestIntel.toStdString().c_str());
+                        }
+                    }
+
+                }
+                else{
+                    if(newIntel)
+                    {
+                        //latestIntel = newLine;
+                        if(!initialSetup)
+                        {
+                            //qDebug() << getName() << " " << newLine.toStdString().c_str();
+                            transferIntel(newLine.toStdString().c_str());
+                        }
+                    }
+                    else if(latestIntel.compare(newLine) == 0)
+                    {
+                        newIntel = true;
                     }
                 }
-                else if(latestIntel.compare(newLine) == 0)
-                {
-                    newIntel = true;
-                }
             }
+            inputFile.close();
         }
-        inputFile.close();
+        initialSetup = false;
+        QThread::msleep(1500);
     }
-    initialSetup = false;
-    QTimer::singleShot(1500, this, SLOT(checkIntel()));
+    //QTimer::singleShot(1500, this, SLOT(checkIntel()));
 }
 
 void IntelChannelLogParser::transferIntel(QString intel)
