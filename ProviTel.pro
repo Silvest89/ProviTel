@@ -23,8 +23,7 @@ SOURCES += main.cpp\
     intel.cpp \
     intelmodel.cpp \
     intelchannellogparser.cpp \
-    filedownloader.cpp \
-    utfu.cpp
+    filedownloader.cpp
 
 HEADERS  += provitel.h \
     provimap.h \
@@ -34,8 +33,7 @@ HEADERS  += provitel.h \
     intel.h \
     intelmodel.h \
     intelchannellogparser.h \
-    filedownloader.h \
-    utfu.h
+    filedownloader.h
 
 FORMS    += provitel.ui
 
