@@ -24,6 +24,8 @@ public:
     int minutes;
     int seconds;
 
+    void checkKeywords(QString message);
+
 private:    
     QString name;
     int status;

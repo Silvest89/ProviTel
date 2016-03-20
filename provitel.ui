@@ -109,6 +109,14 @@ QPushButton {
      <property name="text">
       <string>Z-RFE3</string>
      </property>
+     <property name="keywords" stdset="0">
+      <stringlist>
+       <string>z-r</string>
+       <string>z-rfe3</string>
+       <string>z-rf</string>
+       <string>zr</string>
+      </stringlist>
+     </property>
     </widget>
     <widget class="Planets" name="PLF2KP">
      <property name="geometry">

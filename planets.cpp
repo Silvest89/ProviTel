@@ -67,3 +67,18 @@ void Planets::updateTimer()
         statusMessage = getName() + "\nclr " + QDateTime::fromTime_t(seconds).toUTC().toString("h:mm:ss");
     this->setText(statusMessage);
 }
+
+void Planets::checkKeywords(QString message)
+{
+    //if(this->property("keywords") == false)
+        //return;
+
+    /*QStringList keywordList = this->property("keywords").toStringList();
+    QStringListIterator keywordIterator(keywordList);
+    while (keywordIterator.hasNext())
+    {
+        qDebug() << keywordIterator.next().toLocal8Bit().constData();
+        if(message.contains(keywordIterator.next().toLocal8Bit().constData()))
+             qDebug() << keywordIterator.next().toLocal8Bit().constData();
+    }*/
+}

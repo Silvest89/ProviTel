@@ -90,7 +90,9 @@ void ProviTel::processIntel(QString channelName, QString intelMessage)
 
     for (std::vector<Planets*>::iterator it = planets.begin() ; it != planets.end(); ++it)
     {
-        Planets *planet = (Planets*)(*it);
+        Planets *planet = (Planets*)(&it);
+        planet->checkKeywords(intelMessage.trimmed());
+
         //qDebug() << planet->getName();
     }
 }
