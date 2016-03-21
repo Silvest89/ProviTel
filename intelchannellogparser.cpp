@@ -18,7 +18,6 @@ IntelChannelLogParser::IntelChannelLogParser(ProviTel *parent, QString name, QSt
     this->name = name;
     this->latestIntel = "";
 	this->exitThread = false;
-    file ="test.txt";
 
     fileLocation = QStandardPaths::writableLocation(QStandardPaths::DocumentsLocation) + "/EVE/logs/Chatlogs/" + file;
 

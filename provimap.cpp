@@ -5,7 +5,7 @@
 #include <iostream>
 
 #include "provimap.h"
-#include "planets.h"
+#include "system.h"
 #include <QDebug>
 #include <QTimer>
 #include <QStyleOption>

@@ -1,15 +1,14 @@
 #include "provimap.h"
-#include "planets.h"
+#include "system.h"
 #include <QDebug>
 #include <QTimer>
 #include <QVariant>
 
-Planets::Planets(QWidget *parent) : QPushButton(parent)
+System::System(QWidget *parent) : QPushButton(parent)
 {
     this->name = "";
     this->status = CLEAR;
 
-    ((ProviMap*)parent)->addPlanet(*this);
     timer = new QTimer(this);
 
     connect(this, SIGNAL (released()), this, SLOT (handleButton()));
@@ -17,12 +16,12 @@ Planets::Planets(QWidget *parent) : QPushButton(parent)
 
 }
 
-void Planets::handleButton()
+void System::handleButton()
 {
     qDebug() << this->pos().x() << " " << this->pos().y();
 }
 
-void Planets::enterEvent(QEvent *event)
+void System::enterEvent(QEvent *event)
 {
     setCursor(Qt::PointingHandCursor);
 }
@@ -32,29 +31,29 @@ void Planets::enterEvent(QEvent *event)
   this->QPushButton::leaveEvent(event);
 }*/
 
-void Planets::setText(const QString &text)
+void System::setText(const QString &text)
 {
     QPushButton::setText(text);
     if(name == "")
         setName(text);
 }
 
-QString Planets::getName()
+QString System::getName()
 {
     return name;
 }
 
-void Planets::setName(const QString &name)
+void System::setName(const QString &name)
 {
     this->name = name;
 }
 
-int Planets::getStatus()
+int System::getStatus()
 {
     return status;
 }
 
-void Planets::setStatus(int status)
+void System::setStatus(int status)
 {
     this->status = status;
 
@@ -71,7 +70,7 @@ void Planets::setStatus(int status)
     timer->start(500);
 }
 
-void Planets::updateTimer()
+void System::updateTimer()
 {
     QString statusMessage;
     QDateTime timeSince = QDateTime::currentDateTime();
@@ -84,7 +83,7 @@ void Planets::updateTimer()
     this->setText(statusMessage);
 }
 
-void Planets::checkKeywords(QString message)
+void System::checkKeywords(QString message)
 {
     if(getKeywords().isEmpty()){
         //qDebug() << this->getName() + " empty";
@@ -109,11 +108,11 @@ void Planets::checkKeywords(QString message)
     }*/
 }
 
-QStringList Planets::getKeywords(){
+QStringList System::getKeywords(){
     return keywordsList;
 }
 
-void Planets::setKeywords(QStringList keywords)
+void System::setKeywords(QStringList keywords)
 {
     keywordsList = keywords;
     //qDebug() << this->getName() << keywordsList.length();

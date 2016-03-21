@@ -1,5 +1,5 @@
-#ifndef PLANETS_H
-#define PLANETS_H
+#ifndef SYSTEM_H
+#define SYSTEM_H
 
 #include <QPushButton>
 #include <QDateTime>
@@ -9,12 +9,12 @@
 
 enum STATUS { RED = 0 , CLEAR = 1};
 
-class Planets : public QPushButton
+class System : public QPushButton
 {
     Q_OBJECT
     Q_PROPERTY(QStringList keywords READ getKeywords WRITE setKeywords)
 public:
-    Planets(QWidget *parent = 0);
+    System(QWidget *parent = 0);
 
     void setText(const QString &text);
 
@@ -46,4 +46,4 @@ private slots:
 };
 
 
-#endif // PLANETS_H
+#endif // SYSTEM_H

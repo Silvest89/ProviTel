@@ -18,17 +18,9 @@ ProviTel::ProviTel(QWidget *parent) :
 {
     ui->setupUi(this);
 
-    qDebug() << "Setting up filewatcher";
-
-    //watcher.addPath( documentsFolder + "/EVE/logs/Chatlogs");
-    //qDebug() << watcher.directories();
-
-    // connect(&watcher,SIGNAL(fileChanged(QString)),this,SLOT(logsDirUpdated(QString)));
-    //connect(&watcher, SIGNAL(directoryChanged(QString)), this, SLOT(logsDirUpdated(QString)));
-
-    //channelList.append("TheCitadel");
+    channelList.append("TheCitadel");
     channelList.append("4THINTEL");
-    //channelList.append("North Provi Intel");
+    channelList.append("North Provi Intel");
 
     QTimer::singleShot(1500, this, SLOT(getLatestIntelChannels()));
     firstShown = false;
@@ -57,9 +49,9 @@ void ProviTel::getLatestIntelChannels()
         fileName.replace(QRegExp("\\_.*$"), "");
         if(channelList.contains(fileName))
         {            
-            IntelChannelLogParser* intel = new IntelChannelLogParser(this, fileName, ((QFileInfo)*i).baseName() + ".txt");
+            //IntelChannelLogParser* intel = new IntelChannelLogParser(this, fileName, ((QFileInfo)*i).baseName() + ".txt");
 
-            intelChannelList.push_back(intel);
+            intelChannelList.push_back(new IntelChannelLogParser(this, fileName, ((QFileInfo)*i).baseName() + ".txt"));
             channelList.removeOne(fileName);
         }
         if(channelList.isEmpty())
@@ -72,7 +64,7 @@ void ProviTel::processIntel(QString channelName, QString intelMessage)
     //ProviMap *proviMap = this->findChild<ProviMap *>(QString(), Qt::FindChildrenRecursively);
     //std::vector<Planets*> planets = proviMap->getPlanets();
 
-    QList<Planets*> planetList = this->findChildren<Planets *>(QString(), Qt::FindChildrenRecursively);
+    QList<System*> planetList = this->findChildren<System *>(QString(), Qt::FindChildrenRecursively);
 
     QRegularExpression regex("\\[(.*)\\]");
     QRegularExpressionMatch match = regex.match(intelMessage);
@@ -90,14 +82,14 @@ void ProviTel::processIntel(QString channelName, QString intelMessage)
 
     //qDebug() << intelMessage.trimmed();
 
-    //IntelMessages *intelMessages = this->findChild<IntelMessages *>(QString(), Qt::FindChildrenRecursively);
-    //Intel *intel = new Intel(intelMessages, "", reporterName.trimmed(), dateTime.trimmed(), intelMessage.trimmed(), channelName);
-    //intelMessages->addIntel(intel);
+    IntelMessages *intelMessages = this->findChild<IntelMessages *>(QString(), Qt::FindChildrenRecursively);
+    Intel *intel = new Intel(intelMessages, "", reporterName.trimmed(), dateTime.trimmed(), intelMessage.trimmed(), channelName);
+    intelMessages->addIntel(intel);
 
-    QList<Planets*>::iterator i;
+    QList<System*>::iterator i;
     for (i = planetList.begin(); i != planetList.end(); ++i)
     {
-        Planets *planet = (Planets*)(*i);
+        System *planet = (System*)(*i);
         planet->checkKeywords(intelMessage);
     }
 }

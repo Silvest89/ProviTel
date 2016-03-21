@@ -56,8 +56,8 @@
    </property>
    <property name="maximumSize">
     <size>
-     <width>16777215</width>
-     <height>16777215</height>
+     <width>524287</width>
+     <height>524287</height>
     </size>
    </property>
    <property name="baseSize">
@@ -157,7 +157,7 @@ QPushButton {
           <height>775</height>
          </size>
         </property>
-        <widget class="Planets" name="PBRN97_2">
+        <widget class="System" name="PBRN97_2">
          <property name="geometry">
           <rect>
            <x>330</x>
@@ -173,7 +173,7 @@ QPushButton {
           <stringlist/>
          </property>
         </widget>
-        <widget class="Planets" name="PGAOTH_2">
+        <widget class="System" name="PGAOTH_2">
          <property name="geometry">
           <rect>
            <x>530</x>
@@ -189,7 +189,7 @@ QPushButton {
           <stringlist/>
          </property>
         </widget>
-        <widget class="Planets" name="P8P9BM_2">
+        <widget class="System" name="P8P9BM_2">
          <property name="geometry">
           <rect>
            <x>420</x>
@@ -205,7 +205,7 @@ QPushButton {
           <stringlist/>
          </property>
         </widget>
-        <widget class="Planets" name="PR3K7K_2">
+        <widget class="System" name="PR3K7K_2">
          <property name="geometry">
           <rect>
            <x>20</x>
@@ -221,7 +221,7 @@ QPushButton {
           <stringlist/>
          </property>
         </widget>
-        <widget class="Planets" name="PTURI6_2">
+        <widget class="System" name="PTURI6_2">
          <property name="geometry">
           <rect>
            <x>480</x>
@@ -237,7 +237,7 @@ QPushButton {
           <stringlist/>
          </property>
         </widget>
-        <widget class="Planets" name="PYWS0Z_2">
+        <widget class="System" name="PYWS0Z_2">
          <property name="geometry">
           <rect>
            <x>750</x>
@@ -253,7 +253,7 @@ QPushButton {
           <stringlist/>
          </property>
         </widget>
-        <widget class="Planets" name="PH6CX8_2">
+        <widget class="System" name="PH6CX8_2">
          <property name="geometry">
           <rect>
            <x>700</x>
@@ -269,7 +269,7 @@ QPushButton {
           <stringlist/>
          </property>
         </widget>
-        <widget class="Planets" name="PQBLBV_2">
+        <widget class="System" name="PQBLBV_2">
          <property name="geometry">
           <rect>
            <x>800</x>
@@ -285,7 +285,7 @@ QPushButton {
           <stringlist/>
          </property>
         </widget>
-        <widget class="Planets" name="PVKIT7_2">
+        <widget class="System" name="PVKIT7_2">
          <property name="geometry">
           <rect>
            <x>650</x>
@@ -301,7 +301,7 @@ QPushButton {
           <stringlist/>
          </property>
         </widget>
-        <widget class="Planets" name="PZQZ3Y_2">
+        <widget class="System" name="PZQZ3Y_2">
          <property name="geometry">
           <rect>
            <x>570</x>
@@ -317,7 +317,7 @@ QPushButton {
           <stringlist/>
          </property>
         </widget>
-        <widget class="Planets" name="PEYCML_2">
+        <widget class="System" name="PEYCML_2">
          <property name="geometry">
           <rect>
            <x>850</x>
@@ -333,7 +333,7 @@ QPushButton {
           <stringlist/>
          </property>
         </widget>
-        <widget class="Planets" name="PGB22J_2">
+        <widget class="System" name="PGB22J_2">
          <property name="geometry">
           <rect>
            <x>110</x>
@@ -349,7 +349,7 @@ QPushButton {
           <stringlist/>
          </property>
         </widget>
-        <widget class="Planets" name="P4BNQN_2">
+        <widget class="System" name="P4BNQN_2">
          <property name="geometry">
           <rect>
            <x>680</x>
@@ -365,7 +365,7 @@ QPushButton {
           <stringlist/>
          </property>
         </widget>
-        <widget class="Planets" name="P11I53_2">
+        <widget class="System" name="P11I53_2">
          <property name="geometry">
           <rect>
            <x>200</x>
@@ -381,7 +381,7 @@ QPushButton {
           <stringlist/>
          </property>
         </widget>
-        <widget class="Planets" name="PG7AQ7_2">
+        <widget class="System" name="PG7AQ7_2">
          <property name="geometry">
           <rect>
            <x>700</x>
@@ -397,7 +397,7 @@ QPushButton {
           <stringlist/>
          </property>
         </widget>
-        <widget class="Planets" name="PLF2KP_2">
+        <widget class="System" name="PLF2KP_2">
          <property name="geometry">
           <rect>
            <x>10</x>
@@ -413,7 +413,7 @@ QPushButton {
           <stringlist/>
          </property>
         </widget>
-        <widget class="Planets" name="PTUO0T_2">
+        <widget class="System" name="PTUO0T_2">
          <property name="geometry">
           <rect>
            <x>910</x>
@@ -429,7 +429,7 @@ QPushButton {
           <stringlist/>
          </property>
         </widget>
-        <widget class="Planets" name="PBWPLZ_2">
+        <widget class="System" name="PBWPLZ_2">
          <property name="geometry">
           <rect>
            <x>910</x>
@@ -445,7 +445,7 @@ QPushButton {
           <stringlist/>
          </property>
         </widget>
-        <widget class="Planets" name="PQRK85_2">
+        <widget class="System" name="PQRK85_2">
          <property name="geometry">
           <rect>
            <x>460</x>
@@ -461,7 +461,7 @@ QPushButton {
           <stringlist/>
          </property>
         </widget>
-        <widget class="Planets" name="P7MDS1_2">
+        <widget class="System" name="P7MDS1_2">
          <property name="geometry">
           <rect>
            <x>340</x>
@@ -477,7 +477,7 @@ QPushButton {
           <stringlist/>
          </property>
         </widget>
-        <widget class="Planets" name="PTXJII_2">
+        <widget class="System" name="PTXJII_2">
          <property name="geometry">
           <rect>
            <x>120</x>
@@ -493,7 +493,7 @@ QPushButton {
           <stringlist/>
          </property>
         </widget>
-        <widget class="Planets" name="P3KBJ0_2">
+        <widget class="System" name="P3KBJ0_2">
          <property name="geometry">
           <rect>
            <x>290</x>
@@ -509,7 +509,7 @@ QPushButton {
           <stringlist/>
          </property>
         </widget>
-        <widget class="Planets" name="PASSAH_2">
+        <widget class="System" name="PASSAH_2">
          <property name="geometry">
           <rect>
            <x>980</x>
@@ -525,7 +525,7 @@ QPushButton {
           <stringlist/>
          </property>
         </widget>
-        <widget class="Planets" name="PFC3YI_2">
+        <widget class="System" name="PFC3YI_2">
          <property name="geometry">
           <rect>
            <x>490</x>
@@ -541,7 +541,7 @@ QPushButton {
           <stringlist/>
          </property>
         </widget>
-        <widget class="Planets" name="PG5EN2_2">
+        <widget class="System" name="PG5EN2_2">
          <property name="geometry">
           <rect>
            <x>870</x>
@@ -557,7 +557,7 @@ QPushButton {
           <stringlist/>
          </property>
         </widget>
-        <widget class="Planets" name="PX6ABY_2">
+        <widget class="System" name="PX6ABY_2">
          <property name="geometry">
           <rect>
            <x>10</x>
@@ -573,7 +573,7 @@ QPushButton {
           <stringlist/>
          </property>
         </widget>
-        <widget class="Planets" name="PDPJD4_2">
+        <widget class="System" name="PDPJD4_2">
          <property name="geometry">
           <rect>
            <x>380</x>
@@ -589,7 +589,7 @@ QPushButton {
           <stringlist/>
          </property>
         </widget>
-        <widget class="Planets" name="PD6WS1_2">
+        <widget class="System" name="PD6WS1_2">
          <property name="geometry">
           <rect>
            <x>860</x>
@@ -605,7 +605,7 @@ QPushButton {
           <stringlist/>
          </property>
         </widget>
-        <widget class="Planets" name="PC1HAB_2">
+        <widget class="System" name="PC1HAB_2">
          <property name="geometry">
           <rect>
            <x>200</x>
@@ -621,7 +621,7 @@ QPushButton {
           <stringlist/>
          </property>
         </widget>
-        <widget class="Planets" name="PS9AX_2">
+        <widget class="System" name="PS9AX_2">
          <property name="geometry">
           <rect>
            <x>570</x>
@@ -637,7 +637,7 @@ QPushButton {
           <stringlist/>
          </property>
         </widget>
-        <widget class="Planets" name="PISR7P_2">
+        <widget class="System" name="PISR7P_2">
          <property name="geometry">
           <rect>
            <x>290</x>
@@ -653,7 +653,7 @@ QPushButton {
           <stringlist/>
          </property>
         </widget>
-        <widget class="Planets" name="PK1Y5H_2">
+        <widget class="System" name="PK1Y5H_2">
          <property name="geometry">
           <rect>
            <x>780</x>
@@ -669,7 +669,7 @@ QPushButton {
           <stringlist/>
          </property>
         </widget>
-        <widget class="Planets" name="PK1L1J_2">
+        <widget class="System" name="PK1L1J_2">
          <property name="geometry">
           <rect>
            <x>10</x>
@@ -685,7 +685,7 @@ QPushButton {
           <stringlist/>
          </property>
         </widget>
-        <widget class="Planets" name="PQOSRRI_2">
+        <widget class="System" name="PQOSRRI_2">
          <property name="geometry">
           <rect>
            <x>780</x>
@@ -701,7 +701,7 @@ QPushButton {
           <stringlist/>
          </property>
         </widget>
-        <widget class="Planets" name="PHGKI6_2">
+        <widget class="System" name="PHGKI6_2">
          <property name="geometry">
           <rect>
            <x>740</x>
@@ -717,7 +717,7 @@ QPushButton {
           <stringlist/>
          </property>
         </widget>
-        <widget class="Planets" name="PMVCJE_2">
+        <widget class="System" name="PMVCJE_2">
          <property name="geometry">
           <rect>
            <x>70</x>
@@ -733,7 +733,7 @@ QPushButton {
           <stringlist/>
          </property>
         </widget>
-        <widget class="Planets" name="PAY24L_2">
+        <widget class="System" name="PAY24L_2">
          <property name="geometry">
           <rect>
            <x>10</x>
@@ -749,7 +749,7 @@ QPushButton {
           <stringlist/>
          </property>
         </widget>
-        <widget class="Planets" name="P18XAC_2">
+        <widget class="System" name="P18XAC_2">
          <property name="geometry">
           <rect>
            <x>150</x>
@@ -765,7 +765,7 @@ QPushButton {
           <stringlist/>
          </property>
         </widget>
-        <widget class="Planets" name="P9FOB2_2">
+        <widget class="System" name="P9FOB2_2">
          <property name="geometry">
           <rect>
            <x>750</x>
@@ -781,7 +781,7 @@ QPushButton {
           <stringlist/>
          </property>
         </widget>
-        <widget class="Planets" name="PY9MDG_2">
+        <widget class="System" name="PY9MDG_2">
          <property name="geometry">
           <rect>
            <x>970</x>
@@ -797,7 +797,7 @@ QPushButton {
           <stringlist/>
          </property>
         </widget>
-        <widget class="Planets" name="PFX7EM_2">
+        <widget class="System" name="PFX7EM_2">
          <property name="geometry">
           <rect>
            <x>340</x>
@@ -813,7 +813,7 @@ QPushButton {
           <stringlist/>
          </property>
         </widget>
-        <widget class="Planets" name="PIMGAB_2">
+        <widget class="System" name="PIMGAB_2">
          <property name="geometry">
           <rect>
            <x>150</x>
@@ -829,7 +829,7 @@ QPushButton {
           <stringlist/>
          </property>
         </widget>
-        <widget class="Planets" name="PI7S1S_2">
+        <widget class="System" name="PI7S1S_2">
          <property name="geometry">
           <rect>
            <x>700</x>
@@ -845,7 +845,7 @@ QPushButton {
           <stringlist/>
          </property>
         </widget>
-        <widget class="Planets" name="PXHQ7V_2">
+        <widget class="System" name="PXHQ7V_2">
          <property name="geometry">
           <rect>
            <x>820</x>
@@ -861,7 +861,7 @@ QPushButton {
           <stringlist/>
          </property>
         </widget>
-        <widget class="Planets" name="POXIYV_2">
+        <widget class="System" name="POXIYV_2">
          <property name="geometry">
           <rect>
            <x>420</x>
@@ -877,7 +877,7 @@ QPushButton {
           <stringlist/>
          </property>
         </widget>
-        <widget class="Planets" name="PAYYCU_2">
+        <widget class="System" name="PAYYCU_2">
          <property name="geometry">
           <rect>
            <x>390</x>
@@ -893,7 +893,7 @@ QPushButton {
           <stringlist/>
          </property>
         </widget>
-        <widget class="Planets" name="PJEIVE_2">
+        <widget class="System" name="PJEIVE_2">
          <property name="geometry">
           <rect>
            <x>780</x>
@@ -909,7 +909,7 @@ QPushButton {
           <stringlist/>
          </property>
         </widget>
-        <widget class="Planets" name="P5IO8U_2">
+        <widget class="System" name="P5IO8U_2">
          <property name="geometry">
           <rect>
            <x>400</x>
@@ -925,7 +925,7 @@ QPushButton {
           <stringlist/>
          </property>
         </widget>
-        <widget class="Planets" name="PERVKP_2">
+        <widget class="System" name="PERVKP_2">
          <property name="geometry">
           <rect>
            <x>370</x>
@@ -941,7 +941,7 @@ QPushButton {
           <stringlist/>
          </property>
         </widget>
-        <widget class="Planets" name="PNRMSH_2">
+        <widget class="System" name="PNRMSH_2">
          <property name="geometry">
           <rect>
            <x>690</x>
@@ -957,7 +957,7 @@ QPushButton {
           <stringlist/>
          </property>
         </widget>
-        <widget class="Planets" name="P7YWVS_2">
+        <widget class="System" name="P7YWVS_2">
          <property name="geometry">
           <rect>
            <x>250</x>
@@ -973,7 +973,7 @@ QPushButton {
           <stringlist/>
          </property>
         </widget>
-        <widget class="Planets" name="PMISABA_2">
+        <widget class="System" name="PMISABA_2">
          <property name="geometry">
           <rect>
            <x>10</x>
@@ -989,7 +989,7 @@ QPushButton {
           <stringlist/>
          </property>
         </widget>
-        <widget class="Planets" name="P6OQJV_2">
+        <widget class="System" name="P6OQJV_2">
          <property name="geometry">
           <rect>
            <x>500</x>
@@ -1005,7 +1005,7 @@ QPushButton {
           <stringlist/>
          </property>
         </widget>
-        <widget class="Planets" name="PFDTOO_2">
+        <widget class="System" name="PFDTOO_2">
          <property name="geometry">
           <rect>
            <x>860</x>
@@ -1021,7 +1021,7 @@ QPushButton {
           <stringlist/>
          </property>
         </widget>
-        <widget class="Planets" name="PGN7XY_2">
+        <widget class="System" name="PGN7XY_2">
          <property name="geometry">
           <rect>
            <x>860</x>
@@ -1037,7 +1037,7 @@ QPushButton {
           <stringlist/>
          </property>
         </widget>
-        <widget class="Planets" name="PN8XAL_2">
+        <widget class="System" name="PN8XAL_2">
          <property name="geometry">
           <rect>
            <x>90</x>
@@ -1053,7 +1053,7 @@ QPushButton {
           <stringlist/>
          </property>
         </widget>
-        <widget class="Planets" name="P3GXFU_2">
+        <widget class="System" name="P3GXFU_2">
          <property name="geometry">
           <rect>
            <x>550</x>
@@ -1069,7 +1069,7 @@ QPushButton {
           <stringlist/>
          </property>
         </widget>
-        <widget class="Planets" name="P8BVLX_2">
+        <widget class="System" name="P8BVLX_2">
          <property name="geometry">
           <rect>
            <x>110</x>
@@ -1085,7 +1085,7 @@ QPushButton {
           <stringlist/>
          </property>
         </widget>
-        <widget class="Planets" name="P49GCR_2">
+        <widget class="System" name="P49GCR_2">
          <property name="geometry">
           <rect>
            <x>590</x>
@@ -1101,7 +1101,7 @@ QPushButton {
           <stringlist/>
          </property>
         </widget>
-        <widget class="Planets" name="PI539_2">
+        <widget class="System" name="PI539_2">
          <property name="geometry">
           <rect>
            <x>860</x>
@@ -1117,7 +1117,7 @@ QPushButton {
           <stringlist/>
          </property>
         </widget>
-        <widget class="Planets" name="PSII89_2">
+        <widget class="System" name="PSII89_2">
          <property name="geometry">
           <rect>
            <x>950</x>
@@ -1133,7 +1133,7 @@ QPushButton {
           <stringlist/>
          </property>
         </widget>
-        <widget class="Planets" name="PTRPFU_2">
+        <widget class="System" name="PTRPFU_2">
          <property name="geometry">
           <rect>
            <x>300</x>
@@ -1149,7 +1149,7 @@ QPushButton {
           <stringlist/>
          </property>
         </widget>
-        <widget class="Planets" name="P5KGPY_2">
+        <widget class="System" name="P5KGPY_2">
          <property name="geometry">
           <rect>
            <x>860</x>
@@ -1165,7 +1165,7 @@ QPushButton {
           <stringlist/>
          </property>
         </widget>
-        <widget class="Planets" name="POY5JQ_2">
+        <widget class="System" name="POY5JQ_2">
          <property name="geometry">
           <rect>
            <x>690</x>
@@ -1181,7 +1181,7 @@ QPushButton {
           <stringlist/>
          </property>
         </widget>
-        <widget class="Planets" name="PS25CK_2">
+        <widget class="System" name="PS25CK_2">
          <property name="geometry">
           <rect>
            <x>240</x>
@@ -1197,7 +1197,7 @@ QPushButton {
           <stringlist/>
          </property>
         </widget>
-        <widget class="Planets" name="PXR3NM_2">
+        <widget class="System" name="PXR3NM_2">
          <property name="geometry">
           <rect>
            <x>10</x>
@@ -1213,7 +1213,7 @@ QPushButton {
           <stringlist/>
          </property>
         </widget>
-        <widget class="Planets" name="PIWZ3C_2">
+        <widget class="System" name="PIWZ3C_2">
          <property name="geometry">
           <rect>
            <x>690</x>
@@ -1229,7 +1229,7 @@ QPushButton {
           <stringlist/>
          </property>
         </widget>
-        <widget class="Planets" name="PUL7I8_2">
+        <widget class="System" name="PUL7I8_2">
          <property name="geometry">
           <rect>
            <x>450</x>
@@ -1245,7 +1245,7 @@ QPushButton {
           <stringlist/>
          </property>
         </widget>
-        <widget class="Planets" name="PH9J8N_2">
+        <widget class="System" name="PH9J8N_2">
          <property name="geometry">
           <rect>
            <x>300</x>
@@ -1261,7 +1261,7 @@ QPushButton {
           <stringlist/>
          </property>
         </widget>
-        <widget class="Planets" name="PSHINTAHT_2">
+        <widget class="System" name="PSHINTAHT_2">
          <property name="geometry">
           <rect>
            <x>770</x>
@@ -1277,7 +1277,7 @@ QPushButton {
           <stringlist/>
          </property>
         </widget>
-        <widget class="Planets" name="P08ZJJ_2">
+        <widget class="System" name="P08ZJJ_2">
          <property name="geometry">
           <rect>
            <x>640</x>
@@ -1293,7 +1293,7 @@ QPushButton {
           <stringlist/>
          </property>
         </widget>
-        <widget class="Planets" name="PBK4YC_2">
+        <widget class="System" name="PBK4YC_2">
          <property name="geometry">
           <rect>
            <x>100</x>
@@ -1309,7 +1309,7 @@ QPushButton {
           <stringlist/>
          </property>
         </widget>
-        <widget class="Planets" name="PDNR7M_2">
+        <widget class="System" name="PDNR7M_2">
          <property name="geometry">
           <rect>
            <x>780</x>
@@ -1325,7 +1325,7 @@ QPushButton {
           <stringlist/>
          </property>
         </widget>
-        <widget class="Planets" name="PMH9CS_2">
+        <widget class="System" name="PMH9CS_2">
          <property name="geometry">
           <rect>
            <x>210</x>
@@ -1341,7 +1341,7 @@ QPushButton {
           <stringlist/>
          </property>
         </widget>
-        <widget class="Planets" name="PGA9P0_2">
+        <widget class="System" name="PGA9P0_2">
          <property name="geometry">
           <rect>
            <x>200</x>
@@ -1357,7 +1357,7 @@ QPushButton {
           <stringlist/>
          </property>
         </widget>
-        <widget class="Planets" name="PTA3T3_2">
+        <widget class="System" name="PTA3T3_2">
          <property name="geometry">
           <rect>
            <x>600</x>
@@ -1373,7 +1373,7 @@ QPushButton {
           <stringlist/>
          </property>
         </widget>
-        <widget class="Planets" name="PZTLPU_2">
+        <widget class="System" name="PZTLPU_2">
          <property name="geometry">
           <rect>
            <x>300</x>
@@ -1389,7 +1389,7 @@ QPushButton {
           <stringlist/>
          </property>
         </widget>
-        <widget class="Planets" name="PF9EKX_2">
+        <widget class="System" name="PF9EKX_2">
          <property name="geometry">
           <rect>
            <x>510</x>
@@ -1405,7 +1405,7 @@ QPushButton {
           <stringlist/>
          </property>
         </widget>
-        <widget class="Planets" name="PYQB22_2">
+        <widget class="System" name="PYQB22_2">
          <property name="geometry">
           <rect>
            <x>830</x>
@@ -1421,7 +1421,7 @@ QPushButton {
           <stringlist/>
          </property>
         </widget>
-        <widget class="Planets" name="PFSW3C_2">
+        <widget class="System" name="PFSW3C_2">
          <property name="geometry">
           <rect>
            <x>510</x>
@@ -1437,7 +1437,7 @@ QPushButton {
           <stringlist/>
          </property>
         </widget>
-        <widget class="Planets" name="PDGTMI_2">
+        <widget class="System" name="PDGTMI_2">
          <property name="geometry">
           <rect>
            <x>420</x>
@@ -1453,7 +1453,7 @@ QPushButton {
           <stringlist/>
          </property>
         </widget>
-        <widget class="Planets" name="PUHYMT_2">
+        <widget class="System" name="PUHYMT_2">
          <property name="geometry">
           <rect>
            <x>540</x>
@@ -1469,7 +1469,7 @@ QPushButton {
           <stringlist/>
          </property>
         </widget>
-        <widget class="Planets" name="PKBP7G_2">
+        <widget class="System" name="PKBP7G_2">
          <property name="geometry">
           <rect>
            <x>910</x>
@@ -1485,7 +1485,7 @@ QPushButton {
           <stringlist/>
          </property>
         </widget>
-        <widget class="Planets" name="PZRFE3_2">
+        <widget class="System" name="PZRFE3_2">
          <property name="geometry">
           <rect>
            <x>220</x>
@@ -1506,7 +1506,7 @@ QPushButton {
           </stringlist>
          </property>
         </widget>
-        <widget class="Planets" name="PKARI_2">
+        <widget class="System" name="PKARI_2">
          <property name="geometry">
           <rect>
            <x>980</x>
@@ -1522,7 +1522,7 @@ QPushButton {
           <stringlist/>
          </property>
         </widget>
-        <widget class="Planets" name="P9UY4H_2">
+        <widget class="System" name="P9UY4H_2">
          <property name="geometry">
           <rect>
            <x>630</x>
@@ -1538,7 +1538,7 @@ QPushButton {
           <stringlist/>
          </property>
         </widget>
-        <widget class="Planets" name="PDITAL_2">
+        <widget class="System" name="PDITAL_2">
          <property name="geometry">
           <rect>
            <x>980</x>
@@ -1554,7 +1554,7 @@ QPushButton {
           <stringlist/>
          </property>
         </widget>
-        <widget class="Planets" name="PYMPWL_2">
+        <widget class="System" name="PYMPWL_2">
          <property name="geometry">
           <rect>
            <x>880</x>
@@ -1570,7 +1570,7 @@ QPushButton {
           <stringlist/>
          </property>
         </widget>
-        <widget class="Planets" name="PINQWR_2">
+        <widget class="System" name="PINQWR_2">
          <property name="geometry">
           <rect>
            <x>780</x>
@@ -1586,7 +1586,7 @@ QPushButton {
           <stringlist/>
          </property>
         </widget>
-        <widget class="Planets" name="P2VCS5_2">
+        <widget class="System" name="P2VCS5_2">
          <property name="geometry">
           <rect>
            <x>390</x>
@@ -1602,7 +1602,7 @@ QPushButton {
           <stringlist/>
          </property>
         </widget>
-        <widget class="Planets" name="P2TEGJ_2">
+        <widget class="System" name="P2TEGJ_2">
          <property name="geometry">
           <rect>
            <x>140</x>
@@ -1618,7 +1618,7 @@ QPushButton {
           <stringlist/>
          </property>
         </widget>
-        <widget class="Planets" name="PHP6Z6_2">
+        <widget class="System" name="PHP6Z6_2">
          <property name="geometry">
           <rect>
            <x>300</x>
@@ -1634,7 +1634,7 @@ QPushButton {
           <stringlist/>
          </property>
         </widget>
-        <widget class="Planets" name="PX4WZD_2">
+        <widget class="System" name="PX4WZD_2">
          <property name="geometry">
           <rect>
            <x>570</x>
@@ -1650,7 +1650,7 @@ QPushButton {
           <stringlist/>
          </property>
         </widget>
-        <widget class="Planets" name="PD61AG_2">
+        <widget class="System" name="PD61AG_2">
          <property name="geometry">
           <rect>
            <x>790</x>
@@ -1666,7 +1666,7 @@ QPushButton {
           <stringlist/>
          </property>
         </widget>
-        <widget class="Planets" name="P0BHLZ_2">
+        <widget class="System" name="P0BHLZ_2">
          <property name="geometry">
           <rect>
            <x>220</x>
@@ -1682,7 +1682,7 @@ QPushButton {
           <stringlist/>
          </property>
         </widget>
-        <widget class="Planets" name="P18GZM_2">
+        <widget class="System" name="P18GZM_2">
          <property name="geometry">
           <rect>
            <x>100</x>
@@ -1698,7 +1698,7 @@ QPushButton {
           <stringlist/>
          </property>
         </widget>
-        <widget class="Planets" name="P3DCQU_2">
+        <widget class="System" name="P3DCQU_2">
          <property name="geometry">
           <rect>
            <x>290</x>
@@ -1714,7 +1714,7 @@ QPushButton {
           <stringlist/>
          </property>
         </widget>
-        <widget class="Planets" name="PFYH5B_2">
+        <widget class="System" name="PFYH5B_2">
          <property name="geometry">
           <rect>
            <x>290</x>
@@ -1875,14 +1875,14 @@ QPushButton {
    <container>1</container>
   </customwidget>
   <customwidget>
-   <class>Planets</class>
-   <extends>QPushButton</extends>
-   <header>planets.h</header>
-  </customwidget>
-  <customwidget>
    <class>IntelMessages</class>
    <extends>QListView</extends>
    <header>intelmessages.h</header>
+  </customwidget>
+  <customwidget>
+   <class>System</class>
+   <extends>QPushButton</extends>
+   <header>system.h</header>
   </customwidget>
  </customwidgets>
  <resources>
