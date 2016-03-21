@@ -8,6 +8,7 @@
 #include <QFile>
 #include <QThread>
 #include <QtConcurrent/QtConcurrentRun>
+#include <QCoreApplication>
 
 IntelChannelLogParser::IntelChannelLogParser(ProviTel *parent, QString name, QString file)
 {
@@ -16,13 +17,14 @@ IntelChannelLogParser::IntelChannelLogParser(ProviTel *parent, QString name, QSt
     this->initialSetup = true;
     this->name = name;
     this->latestIntel = "";
+	this->exitThread = false;
     file ="test.txt";
 
     fileLocation = QStandardPaths::writableLocation(QStandardPaths::DocumentsLocation) + "/EVE/logs/Chatlogs/" + file;
 
     connect(this, SIGNAL(intelFound(QString, QString)), proviTel, SLOT(processIntel(QString, QString)));
-    //QTimer::singleShot(1500, this, SLOT(checkIntel()));
     QtConcurrent::run(this,&IntelChannelLogParser::checkIntel);
+	QObject::connect(QCoreApplication::instance(), SIGNAL(lastWindowClosed()), this, SLOT(quit()));
 }
 
 
@@ -33,7 +35,7 @@ QString IntelChannelLogParser::getName()
 
 void IntelChannelLogParser::checkIntel()
 {
-    while(true){
+    while(!exitThread){
         QFile inputFile(fileLocation);
         if (inputFile.open(QIODevice::ReadOnly))
         {
@@ -83,4 +85,9 @@ void IntelChannelLogParser::checkIntel()
 void IntelChannelLogParser::transferIntel(QString intel)
 {
     emit intelFound(this->getName(), intel);
+}
+
+void IntelChannelLogParser::quit() {
+	exitThread = true;
+	qDebug() << "Thread exiting";
 }

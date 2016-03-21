@@ -21,10 +21,14 @@ public:
 
     QList<QString> channelList;
     QList<IntelChannelLogParser*> intelChannelList;
+    virtual void showEvent(QShowEvent * event);
+    bool firstShown;
+
 
 private slots:
     void getLatestIntelChannels();
     void processIntel(QString channelName, QString intel);
+    void mapUndock(bool topLevel);
 
 private:
     Ui::ProviTel *ui;

@@ -19,6 +19,7 @@ Planets::Planets(QWidget *parent) : QPushButton(parent)
 
 void Planets::handleButton()
 {
+    qDebug() << this->pos().x() << " " << this->pos().y();
 }
 
 void Planets::enterEvent(QEvent *event)

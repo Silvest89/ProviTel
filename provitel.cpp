@@ -31,6 +31,8 @@ ProviTel::ProviTel(QWidget *parent) :
     //channelList.append("North Provi Intel");
 
     QTimer::singleShot(1500, this, SLOT(getLatestIntelChannels()));
+    firstShown = false;
+    connect(this->ui->dockWidget, SIGNAL(topLevelChanged(bool)), this, SLOT(mapUndock(bool)));
 }
 
 ProviTel::~ProviTel()
@@ -98,5 +100,23 @@ void ProviTel::processIntel(QString channelName, QString intelMessage)
         Planets *planet = (Planets*)(*i);
         planet->checkKeywords(intelMessage);
     }
-
 }
+
+void ProviTel::showEvent(QShowEvent * event){
+    if(!firstShown){
+        firstShown = true;
+    }
+}
+
+void ProviTel::mapUndock(bool topLevel){
+    if(topLevel){
+        this->ui->proviMap->setMinimumSize(500, 500);
+        this->ui->dockWidget->setMinimumSize(500, 500);
+    }
+    else{
+        this->ui->dockWidget->setMinimumHeight(847);
+        //this->ui->proviMap->setMinimumSize(1100, 825);
+        //this->ui->dockWidget->setMinimumSize(1100, 847);
+    }
+}
+

@@ -18,6 +18,7 @@ public:
 
 private slots:
     void checkIntel();
+	void quit();
 
 private:
     ProviTel* proviTel;
@@ -28,6 +29,7 @@ private:
 
     QString latestIntel;
     bool initialSetup;
+	bool exitThread;
 
 signals:
     void intelFound(QString, QString);
