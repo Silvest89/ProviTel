@@ -119,6 +119,14 @@ QPushButton {
     border-radius: 15px;
     border-color: black;
     font:  10px;
+}
+QLabel {
+    background-color: white;
+    border-style: outset;
+    border-width: 1px;
+    border-radius: 15px;
+    border-color: black;
+    font:  10px;
 }</string>
     </property>
     <layout class="QVBoxLayout" name="verticalLayout_4">
@@ -156,6 +164,9 @@ QPushButton {
           <width>1050</width>
           <height>775</height>
          </size>
+        </property>
+        <property name="contextMenuPolicy">
+         <enum>Qt::CustomContextMenu</enum>
         </property>
         <widget class="System" name="PBRN97_2">
          <property name="geometry">

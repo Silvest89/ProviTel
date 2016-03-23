@@ -3,6 +3,7 @@
 #include <QDebug>
 #include <QTimer>
 #include <QVariant>
+#include <QLabel>
 
 System::System(QWidget *parent) : QPushButton(parent)
 {
@@ -13,7 +14,6 @@ System::System(QWidget *parent) : QPushButton(parent)
 
     connect(this, SIGNAL (released()), this, SLOT (handleButton()));
     connect(timer, SIGNAL(timeout()), this, SLOT(updateTimer()));
-
 }
 
 void System::handleButton()
